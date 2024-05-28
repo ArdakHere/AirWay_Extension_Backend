@@ -2,11 +2,11 @@ import json
 import requests
 import re
 import pandas as pd
-from utils.plotter import *
 from pandas import DataFrame
 from math import radians, sin, cos, sqrt, atan2
 from openai import OpenAI
 
+from src.plotter import *
 
 client = None  # Define client outside the function
 
@@ -19,7 +19,7 @@ def define_openAI_client_with_key_krisha(key: str) -> None:
     """
 
     global client  # Use the global keyword to modify the global variable inside the function
-    client = OpenAI(api_key="sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
+    client = OpenAI(api_key=key)
 
 def read_sergek_data() -> DataFrame:
     """
@@ -28,28 +28,16 @@ def read_sergek_data() -> DataFrame:
     Returns:
         DataFrame: DataFrame with the data from SERGEK's dataset
     """
-    df = pd.read_parquet("./assets/datasets/data_sensor.parquet")
-    filtered_df = df[
-        ['location_id', 'Latitude', 'Longtitude', 'pm25', 'pm10', 'co']]
-    averages = filtered_df.groupby(
-        'location_id').agg({'pm25': 'mean', 'pm10': 'mean', 'co': 'mean'})
-    result = pd.merge(
-        averages, filtered_df[
-            ['location_id', 'Latitude', 'Longtitude']],
-        on='location_id', how='left').drop_duplicates()
-    pd.set_option('display.float_format', lambda x: '%.8f' % x)
-    pd.set_option('display.width', 200)
-    pd.set_option('display.max_columns', 10)
-    result_str = result.to_string(index=False)
-    result_df = pd.DataFrame(
-        [x.split() for x in result_str.split('\n')], columns=result.columns)
-    return result_df
+    df = pd.read_csv("/Users/ardaka/Desktop/AirWay_Extension/lean_sergek_aq_dataset.csv")
+
+    return df
 
 
 def make_2gis_request_and_return_object_count(
         apiKey: str,
         lat: float,
         lon: float,
+        object_type: str,
         radius: int,
         object_to_search: str
 ) -> int:
@@ -65,38 +53,74 @@ def make_2gis_request_and_return_object_count(
         int: total count of objects found within the radius"""
 
     location = f"{lon}%2C{lat}"
-    params = {
-        "key": apiKey,
-        "point": location,
-        "radius": radius,
-        "q": object_to_search
-    }
-    base_url = f"https://catalog.api.2gis.com/3.0/items?q={object_to_search}&point={location}&radius={radius}&key={apiKey}"
 
-    try:
-        response = requests.get(base_url)
-        print(response.status_code)
-        if response.status_code == 200:
-            response_data = json.loads(response.text)
-            if "result" in response_data:
-                if response_data["result"]["total"]:
-                    total = response_data["result"]["total"]
-                    return total
+    if object_type != "":
+        params = {
+            "key": apiKey,
+            "point": location,
+            "radius": radius,
+            "type": object_type,
+            "q": object_to_search
+        }
+        base_url = f"https://catalog.api.2gis.com/3.0/items?q={object_to_search}&point={location}&radius={radius}&type={object_type}&key={apiKey}"
+
+        try:
+            response = requests.get(base_url)
+            print(response.status_code)
+            if response.status_code == 200:
+                response_data = json.loads(response.text)
+                if "result" in response_data:
+                    if response_data["result"]["total"]:
+                        total = response_data["result"]["total"]
+                        return total
+                    else:
+                        total = len(response_data["result"])
+                        return total
                 else:
-                    total = len(response_data["result"])
+                    total = 0
                     return total
-            else:
+            elif response.status_code == 404:
                 total = 0
                 return total
-        elif response.status_code == 404:
-            total = 0
-            return total
-        elif response.status_code == 403:
-            print("Authorization error")
+            elif response.status_code == 403:
+                print("Authorization error")
+                return None
+        except requests.RequestException as e:
+            print(f"Request error: {e}")
             return None
-    except requests.RequestException as e:
-        print(f"Request error: {e}")
-        return None
+    else:
+        params = {
+            "key": apiKey,
+            "point": location,
+            "radius": radius,
+            "q": object_to_search
+        }
+        base_url = f"https://catalog.api.2gis.com/3.0/items?q={object_to_search}&point={location}&radius={radius}&key={apiKey}"
+
+        try:
+            response = requests.get(base_url)
+            print(response.status_code)
+            if response.status_code == 200:
+                response_data = json.loads(response.text)
+                if "result" in response_data:
+                    if response_data["result"]["total"]:
+                        total = response_data["result"]["total"]
+                        return total
+                    else:
+                        total = len(response_data["result"])
+                        return total
+                else:
+                    total = 0
+                    return total
+            elif response.status_code == 404:
+                total = 0
+                return total
+            elif response.status_code == 403:
+                print("Authorization error")
+                return None
+        except requests.RequestException as e:
+            print(f"Request error: {e}")
+            return None
 
 def generate_gpt_apartment_report(air_quality_data: dict) -> str:
     """
@@ -108,6 +132,7 @@ def generate_gpt_apartment_report(air_quality_data: dict) -> str:
     Returns:
         str: realestate_report generated by GPT-3.5-turbo
         """
+
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -129,7 +154,7 @@ def generate_gpt_apartment_report(air_quality_data: dict) -> str:
 
             }
         ],
-        max_tokens=300
+        max_tokens=150
     )
     report = response.choices[0].message.content
 
@@ -504,7 +529,7 @@ def create_apartment_report_from_manual_input(apartment_location: str) -> str:
     }
     print(closest_sensor_dict)
     data_processed.update({'latitude': closest_sensor_dict['Latitude']})
-    data_processed.update({'longitude': closest_sensor_dict['Longtitude']})
+    data_processed.update({'longitude': closest_sensor_dict['Longitude']})
     data_processed.update({'pm25': int(float(closest_sensor_dict['pm25']))})
     data_processed.update({'pm10': int(float(closest_sensor_dict['pm10']))})
     data_processed.update({'co': int(float(closest_sensor_dict['co']))})
@@ -527,17 +552,18 @@ def create_apartment_report_from_manual_input(apartment_location: str) -> str:
 
     return path_to_report
 
-def access_metrics(coords: str) -> dict:
-    
-    sensor_dataframe = read_sergek_data()
+def access_metrics(coords: dict) -> dict:
 
+    sensor_dataframe = read_sergek_data()
     sensor_locations_df = pd.DataFrame(sensor_dataframe)
     sensor_locations_df = sensor_locations_df.drop(
         sensor_locations_df.index[0])
 
     closest_sensor = find_closest_sensor(
         sensor_locations_df, coords)
+
     closest_sensor_dict = closest_sensor.to_dict()
+
 
     data_processed: dict = calculate_index(closest_sensor_dict)
 
@@ -586,7 +612,7 @@ def create_apartment_report_from_link(url: str) -> str:
         "co": closest_sensor_dict['co']
     }
     data_processed.update({'latitude': closest_sensor_dict['Latitude']})
-    data_processed.update({'longitude': closest_sensor_dict['Longtitude']})
+    data_processed.update({'longitude': closest_sensor_dict['Longitude']})
     data_processed.update({'pm25': int(float(closest_sensor_dict['pm25']))})
     data_processed.update({'pm10': int(float(closest_sensor_dict['pm10']))})
     data_processed.update({'co': int(float(closest_sensor_dict['co']))})

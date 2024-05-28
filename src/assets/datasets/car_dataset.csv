@@ -1,0 +1,30 @@
+price (KZT),brand,model,year,type
+6500000,Chevrolet,Cobalt,2021,non-ev
+6800000,Chevrolet,Nexia,2023,non-ev
+7540000,Chevrolet,Onix,2023,non-ev
+7290000,JAC,J7,2024,non-ev
+9480000,Nissan,Qashqai,2021,non-ev
+11240000,Chevrolet,Onix,2023,non-ev
+18490000,Kia,K5,2024,non-ev
+18690000,"Kia ",Sorento,2024,non-ev
+18700000,Toyota,Camry,2023,non-ev
+9470000,Hyundai,Elantra,2019,non-ev
+13310000,Hyundai,Sonata,2023,non-ev
+14190000,Volkswagen,Passat,2022,non-ev
+20590000,Toyota,RAV4,2023,non-ev
+7700000,Hyundai,Accent,2017,non-ev
+1190000,Kia,Cerato,2024,non-ev
+4110000,Lada,Granta,2020,non-ev
+5000000,Chevrolet,Spark,2021,non-ev
+6750000,Chery,Tiggo,2023,non-ev
+4950000,Chevrolet,Spark,2020,non-ev
+10050000,Volkswagen,ID.4,2023,ev
+9864000,BYD,"Song ",2024,ev
+11900000,Volkswagen,"ID.6 ",2024,ev
+7142000,Honda,e:NS1,2024,ev
+11500000,Zeekr,X,2024,ev
+9000000,Volkswagen,ID.3,2024,ev
+15900000,BYD,Seal,2024,ev
+7695000,BYD,Yuan,2023,ev
+12400000,Kia,EV5,2024,ev
+13000000,BYD,Qin,2023,ev

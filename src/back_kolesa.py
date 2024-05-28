@@ -7,14 +7,14 @@ from openai import OpenAI
 
 client = None  # Define client outside the function
 
-def define_openAI_client_with_key_kolesa() -> None:
+def define_openAI_client_with_key_kolesa(key: str) -> None:
     """
         Set the global value of OpenAI client with the passed api key
     Args:
         key (str): two gis key.
     """
     global client  # Use the global keyword to modify the global variable inside the function
-    client = OpenAI(api_key="sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
+    client = OpenAI(api_key=key)
 
 
 def get_car_recommendations(price: int) -> str:
@@ -29,7 +29,7 @@ def get_car_recommendations(price: int) -> str:
     ev_recommendations = []
 
     # Open the CSV file
-    with open('./assets/datasets/car_dataset.csv', newline='') as csvfile:
+    with open('./src/assets/datasets/car_dataset.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
 
         # Iterate through each row in the CSV file
@@ -61,7 +61,7 @@ def get_car_recommendations(price: int) -> str:
     ev_recommendations_str = "\n".join(ev_recommendations)
 
     # Combine non-ev and ev recommendations into a single string
-    recommendations_str = f"Не электрические авто:\n{non_ev_recommendations_str}\n\nЭлектрические авто:\n{ev_recommendations_str}"
+    recommendations_str = f"\n\nНе электрические авто:\n{non_ev_recommendations_str} | \n\nЭлектрические авто:\n{ev_recommendations_str}"
 
     return recommendations_str
 
@@ -87,10 +87,8 @@ def read_remote_kolesa_page(html_car_data: str) -> dict:
 
     if match:
         car_info["price"] = match.group(1)
-        print("Unit Price:", car_info["price"])
     else:
         print("No unit price found in the HTML.")
-
 
     # Extracting other car information from HTML
     pattern = r'<dt class="value-title" title="(.*?)">.*?<dd class="value">(.*?)</dd>'
@@ -118,10 +116,7 @@ def read_remote_kolesa_page(html_car_data: str) -> dict:
     for key, value in car_info.items():
         if value is not None:
             car_info[key] = translator.translate(value)
-
     return car_info
-
-
 
 def extract_co2_emissions(co2_emissions_str: str) -> int:
     """
@@ -185,19 +180,12 @@ def request_metrics_and_recommendations(
                 "role": "system",
                 "content": "Hey! I am going to provide a data on a car and I want you to provide the values of CO2, NOx, SO2 and PM2.5 "
                            "that the car emits when driving. You may not know the exact numbers, in this case provide approximate values "
-                           " Then, provide recommendations below based on the values and the car related data that I will provide. Write each recommendation"
-                           "on a new line, and each recommendation should be shorter than 7 words, add new line characters if the sentence is longer. Limit to maximum of 5 recommendations"
-                           "Don't put periods at the ends of the sentences. START EACH RECOMMENDATION FROM THE NEWLINE. "
                            "Provide the answer in the following format and do not use words such as approximately, just give the number: "
                            "Gas expenditure is equal to"
                            "CO2 is equal to"
                            "NOx is equal to"
                            "SO2 is equal to"
                            "PM2.5 is equal to"
-                           "Recommendations:"
-                           "1."
-                           "2."
-                           "3."
             },
             {
                 "role": "user",

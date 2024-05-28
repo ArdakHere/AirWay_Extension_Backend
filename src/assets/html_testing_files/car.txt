@@ -1,0 +1,1393 @@
+
+<!doctype html>
+<html lang="ru" xmlns:xlink="http://www.w3.org/1999/xlink">
+<head>
+    <meta charset="UTF-8">
+    <!--SEO-->
+    <title>Продажа Kia Picanto 2013 года в Алматы - №168178552: цена 4210000&#8376;. Купить Kia Picanto — Колёса</title>
+    <meta name="description" content="«Колеса» - объявление №168178552 о продаже Kia Picanto 2013 года в Алматы за 4210000&#8376;. Описание, цена, фото, характеристики Kia Picanto 2013 года"/>
+    <meta name="keywords" content="продажа, kia, picanto, 2013, года, алматы, №168178552, цена, 4210000amp8376, купить, колёса"/>
+    <meta property="fb:pages" content="487915631223232" />
+    <meta name="yandex-verification" content="3a6b5a2f06b43bce" />
+            <link href="//m.kolesa.kz/a/show/168178552" media="only screen and (max-width: 640px)" rel="alternate">
+                    <link rel="canonical" href="https://kolesa.kz/a/show/168178552"/>
+                    <meta name='wmail-verification' content='69476cf770e74b47e29b023e1eedfdb9' />
+            <!--SEO-->
+    <meta name="author" content="Kolesa" />
+                <link rel="stylesheet" type="text/css" href="//kolesa.kz/static/frontend/css/main-payment.5a74d0642f.css" />
+<link rel="stylesheet" type="text/css" href="//kolesa.kz/static/frontend/css/main-common.a2cb7e20d3.css" />
+
+
+    <link rel="stylesheet" type="text/css" href="//kolesa.kz/static/frontend/css/main-a.6d0608ef30.css" />
+
+    <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="icon" href="/icon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="manifest" href="/manifest.webmanifest?v=2">
+<meta name="apple-mobile-web-app-title" content="Kolesa.kz">
+<meta name="application-name" content="Kolesa.kz">
+<meta name="theme-color" content="#ffffff">
+    <script type="text/javascript">
+        var YaDirectParams = {
+            stat_id: 1,
+            ad_format: "direct",
+            font_size: 1,
+            type: "oldHorizontal",
+            limit: 1,
+            title_font_size: 3,
+            links_underline: true,
+            site_bg_color: "FFFFFF",
+            bg_color: "FFF2CF",
+            title_color: "996633",
+            url_color: "0000CC",
+            text_color: "333333",
+            hover_color: "0066FF",
+            favicon: true,
+            no_sitelinks: true
+        };
+    </script>
+
+            <meta property="og:title" content="Kia Picanto 2013 г."/>
+
+    <meta property="og:url" content="/a/show/168178552"/>
+
+
+<meta property="og:image" content="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-full.webp"/>
+
+
+    <script>
+    loadErrorsMap = [];
+    loadErrorHandler = function(node) {
+        loadErrorsMap.push(node);
+    }
+</script>
+
+    <link rel="preload" href="https://kolesa.kz/static/frontend/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://kolesa.kz/static/frontend/fonts/OpenSans-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M6NQ9S');</script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); }
+
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-K434WRXPFF');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- TikTok Pixel -->
+<script>
+    !function (w, d, t) {
+        w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+        )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+        ttq.load('CBCFH3RC77U9CRRSGTL0');
+        ttq.page();
+    }(window, document, 'ttq');
+</script>
+<!-- End TikTok Pixel -->
+
+<script>
+    var listing = {
+        items: [],
+        vip: [],
+        grid: [],
+        hot: [],
+    };
+</script>
+
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+    window.googletag = window.googletag || { cmd: [] };
+
+    googletag.cmd.push(function () {
+        // Скрываем баннеры если в них не появился контент.
+        var iterations = 0;
+        var interval = window.setInterval(function () {
+            try {
+                var elements = document.querySelectorAll('.common-b');
+
+                if (elements.length < 1 || ++iterations > 100) {
+                    window.clearInterval(interval);
+                }
+
+                elements.forEach(function (node) {
+
+                        if (!node.children[0]) {
+                            node.style.display = "none";
+
+                            return;
+                        }
+
+                        node.style.display = window.getComputedStyle(node.children[0]).display === 'none' ? 'none' : undefined;
+                });
+            } catch (e) {
+                clearInterval(interval);
+            }
+        }, 50);
+    });
+</script>
+
+        <script>
+    window.googletag = window.googletag || { cmd: [] };
+
+    googletag.cmd.push(function() {
+                    googletag.defineSlot('/21685517069/Kolesa_Homepage_Top_new', [[728,90],[900,90],[970,90],[980,100],[970,120]], 'div-gpt-ad-1523603988419-0')
+                .addService(googletag.pubads());
+
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+
+                    googletag.pubads().setTargeting('kl_category', 'Машины');
+                    googletag.pubads().setTargeting('kl_price', '3600000-7200000');
+                    googletag.pubads().setTargeting('kl_year', '0-2017');
+                    googletag.pubads().setTargeting('kl_auto.car.mm', 'Kia Picanto');
+                    googletag.pubads().setTargeting('kl_auto.condition', 'С пробегом');
+                    googletag.pubads().setTargeting('kl_city', 'Алматы');
+                    googletag.pubads().setTargeting('kl_url', '/a/show/168178552');
+
+        googletag.enableServices();
+    });
+</script>
+
+    </head>
+<body class="">
+    <script>
+    var data = {"isProduction":true,"auth-url":"\/user\/ajax-xdm-auth\/","appHost":"\/\/app.kolesa.kz","views":{"link":"\/ms\/views\/kolesa"},"language":"ru","selectLanguage":{"enabled":true,"current":"ru","alias":"ru","languages":{"kz":"\u049a\u0430\u0437\u0430\u049b\u0448\u0430","ru":"\u0420\u0443\u0441\u0441\u043a\u0438\u0439"},"pageUrl":"\/a\/show\/168178552"},"staticLink":"\/\/kolesa.kz\/static\/frontend","cdn":{"cookie":"kl_cdn_host","defaultHost":"astps-photos-kl.kcdn.kz"},"limitValues":5,"multiSelectDelimiter":",","sizeNotifications":5,"isCreditPage":false,"isResalePage":false,"hasVerifiedPhone":false,"globalUserId":null,"listedUsersToReport":[18949883],"isNYEnabled":false,"buckyConfig":{"host":"\/ms\/rum","aggregationInterval":100,"sample":1},"buckyPrefix":"kolesa.frontend","sentryConfig":{"isEnabled":true,"blackList":"metrika,Non-Error promise rejection,partner-code-bundles,pcode,AdSDK,gtm.js,Invalid scheme,chrome-extension,anonymous,ntp is not defined,pubads,pagead,freed script,adfox,illegal character,Script error,Invalid scheme,Script error.,"},"advisory":{"url":"\/a\/ajax-advisory\/","timeoutSeconds":5,"cookieName":"promo_advisory_new","cookieDeclineTimeout":86400,"cookieApplyTimeout":86400},"guideHints":{"url":"\/ajax-get-guide-hints\/","cookiePrefix":"gh_","isUserAdvertOwner":false},"accountFill":{"url":"https:\/\/pay.kolesa.kz\/cabinet?"},"urlToSettings":"\/passport\/settings\/","gatewayScript":["https:\/\/pay.kolesa.kz\/static\/js\/gateway\/common\/iframe-loader.js"],"paidServicesUrls":{"move-to-archive":"\/my\/ajax-move-to-archive\/"},"referrerUrl":"","urlSignin":"\/signin","sectionName":"\u041c\u0430\u0448\u0438\u043d\u044b","categoryName":"\u041b\u0435\u0433\u043a\u043e\u0432\u044b\u0435","advert":{"id":168178552,"userId":22683244,"storage":"live","category":"auto.car","section":"cars","title":"Kia Picanto 2013 \u0433.","region":"\u0410\u043b\u043c\u0430\u0442\u044b","isHideFraudWarning":true,"isOwn":false,"nbPhones":1,"phonePrefix":"+7 778","isNewAuto":false,"photo":{"x1":"https:\/\/astps-photos-kl.kcdn.kz\/webp\/86\/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0\/1-120x90.webp","x2":"https:\/\/astps-photos-kl.kcdn.kz\/webp\/86\/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0\/1-240x180.webp","alt":"Kia Picanto 2013 \u0433\u043e\u0434\u0430 \u0437\u0430 4 210 000 \u0442\u0433. \u0432 \u0410\u043b\u043c\u0430\u0442\u044b"},"hasCallbackButton":false},"otherUserAdvertsUrl":"\/a\/ajax-other-user-adverts\/","url-phone-rules":"\/a\/ajax-load-phone-rules\/","urlSaveBid":"\/pro\/saveBid\/","urlCheater":"https:\/\/kolesa.kz\/content\/kak-ne-stat-zhertvoj-moshennikov-pri-pokupke-i-prodazhe-avto\/","urlAuthorize":"\/signin?backUrl=https%3A%2F%2Fkolesa.kz%2Fa%2Fshow%2F168178552%3FfromAuthorize%3D1","product":{"id":168178552,"unitPrice":"4210000","name":"Kia Picanto","city":"\u0410\u043b\u043c\u0430\u0442\u044b","categoryId":2,"unifiedCategory":2},"dataForGA":{"section":"auto","category":"car","region":"almatinskaya-oblast"},"recaptchaData":{"scriptUrl":"https:\/\/www.google.com\/recaptcha\/api.js","siteKey":"6LetdlYUAAAAAPK0KOKQ-mueKeAbqsID_A5NKQzq"},"contactButtons":[],"urlSendMessage":"\/messages\/?advertId=168178552&source=advert&category=auto.car&section=cars","nps":{"project":"kolesa.kz","data":{"category":"\u041b\u0435\u0433\u043a\u043e\u0432\u044b\u0435","section":"\u041c\u0430\u0448\u0438\u043d\u044b"},"url":"https:\/\/kolesa.kz\/ms\/nps\/"},"userLogin":null,"route":"advert:show","controller":"advert","action":"show","app":"Frontend","userId":0};
+</script>
+
+
+            <div class="layout">
+            <div class="layout__content">
+                <header>
+                    <div
+    class="top-header"
+    data-test="top-header"
+>
+    <div class="ui-container ">
+        <div class="top-header__wrap">
+
+<ul class="corp-projects">
+
+        <li class="corp-projects__item corp-projects__item--active">
+            <a
+                class="corp-projects__title js__tippy corp-projects__link"
+                                    href="/"
+                                data-tippy-content="Автомобили"
+                data-tippy-placement="bottom"
+                data-tippy-theme="kl-dark"
+                data-tippy-offset="[0, 16]"
+            >
+                Kolesa.kz
+            </a>
+        </li>
+
+        <li class="corp-projects__item ">
+            <a
+                class="corp-projects__title js__tippy corp-projects__link"
+                                    href="http://krisha.kz"
+                                data-tippy-content="Недвижимость"
+                data-tippy-placement="bottom"
+                data-tippy-theme="kl-dark"
+                data-tippy-offset="[0, 16]"
+            >
+                Krisha.kz
+            </a>
+        </li>
+    </ul>
+            <nav class="header-menu js__header-menu">
+    <ul class="header-menu__list js-header-nav">
+                    <li class="header-menu__list-item header-menu__list-item--locale">
+
+                <div class="header-menu-dropdown">
+                    <button
+                        class="header-menu-dropdown__toggler js__locale-menu"
+                        data-tippy-template="locale-menu"
+                        data-tippy-placement="bottom"
+                        data-tippy-offset="[0,8]"
+                        data-tippy-theme="kl-full"
+                    >
+                        RU
+                        <span class="header-menu-dropdown__toggler-icon">
+                            <span class="fi-arrow-mini"></span>
+                        </span>
+                    </button>
+                    <template id="locale-menu">
+                        <ul class="locale-menu">
+
+        <li class="locale-menu__item">
+            <a
+                class="locale-menu__link"
+                href="/language/?backUrl=%2Fa%2Fshow%2F168178552&language=kz"
+                rel="nofollow"
+            >
+                Қазақша
+            </a>
+        </li>
+
+        <li class="locale-menu__item">
+            <a
+                class="locale-menu__link locale-menu__link--active"
+                href="/language/?backUrl=%2Fa%2Fshow%2F168178552&language=ru"
+                rel="nofollow"
+            >
+                Русский
+            </a>
+        </li>
+    </ul>
+                    </template>
+                </div>
+            </li>
+
+                    <li class="header-menu__list-item">
+                <a class="header-menu-link" href="/passport/register/">
+                    <span class="header-menu-link__label">Регистрация</span>
+                </a>
+            </li>
+            <li class="header-menu__list-item">
+                <a class="header-menu-link" href="/cabinet/">
+                    <span class="header-menu-link__label">Личный кабинет</span>
+                </a>
+            </li>
+            </ul>
+</nav>
+        </div>
+    </div>
+</div>
+                    <div class="main-header">
+    <div class="ui-container">
+        <div class="main-header__wrap">
+            <div class="main-header__logo">
+
+<div class="main-logo">
+            <a class="main-logo__link" href="/">
+            <img src="//kolesa.kz/static/frontend/images/kolesa-logo-new.svg" width="162" alt="Колеса" />
+        </a>
+    </div>
+            </div>
+            <div class="main-header__menu">
+                <ul
+    class="main-menu"
+    data-test="main-menu"
+>
+
+        <li class="main-menu__item ">
+            <a
+                class="main-menu__link isSelected "
+                href="/"
+                                    id="currentSection"                            >
+                <span class="main-menu__label">Машины</span>
+
+                            </a>
+        </li>
+
+        <li class="main-menu__item ">
+            <a
+                class="main-menu__link  "
+                href="/cars/?userId=22683244"
+                                            >
+                <span class="main-menu__label">Авто от Kolesa.kz</span>
+
+                                    <span class="main-menu__icon fi-verification-filled"></span>
+                            </a>
+        </li>
+
+        <li class="main-menu__item ">
+            <a
+                class="main-menu__link  js__new-auto"
+                href="/cars/new/"
+                                data-test="new-auto-link"            >
+                <span class="main-menu__label">Новые авто</span>
+
+                            </a>
+        </li>
+
+        <li class="main-menu__item ">
+            <a
+                class="main-menu__link  "
+                href="/zapchasti/"
+                                            >
+                <span class="main-menu__label">Запчасти</span>
+
+                            </a>
+        </li>
+
+        <li class="main-menu__item ">
+            <a
+                class="main-menu__link  "
+                href="/uslugi/"
+                                            >
+                <span class="main-menu__label">Ремонт и услуги</span>
+
+                            </a>
+        </li>
+
+        <li class="main-menu__item ">
+            <a
+                class="main-menu__link  "
+                href="/spectehnika/"
+                                            >
+                <span class="main-menu__label">Коммерческие</span>
+
+                            </a>
+        </li>
+
+    <li class="main-menu__item">
+        <a class="main-menu__link" href="https://kolesa.kz/content/">
+            Почитать        </a>
+    </li>
+    <li class="main-menu__item">
+        <a class="main-menu__link" href="https://kolesa.kz/content/kolesa-gid/">
+            Гид
+        </a>
+    </li>
+</ul>
+            </div>
+            <div class="main-header__add-a">
+                <div class="a-add">
+    <a
+        class="a-add__button kl-ui-button kl-ui-button--white js__add-new"
+        href="/a/new/"
+        data-source="header"
+        data-test="add-advert-main-header-button"
+    >
+        <span class="fi-add-big"></span>
+        <span class="label">Подать объявление</span>
+    </a>
+    <div class="a-add__hint">
+        999&nbsp;610 уже на сайте
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+                </header>
+
+
+
+                <main>
+
+                    <div class="container">
+
+    <div class="row">
+        <div class="offer">
+                        <div class="offer__breadcrumps">
+                    <ol class="breadcrumbs">            <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/" itemprop="url">Главная</a>
+            </li>
+                    <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/cars/" itemprop="url">Легковые</a>
+            </li>
+                    <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/cars/hatchback/" itemprop="url">Хэтчбеки 5-дв..</a>
+            </li>
+                    <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/cars/hatchback/avtokredit/" itemprop="url">Хэтчбеки 5-дв.. Купить в кредит</a>
+            </li>
+                    <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/cars/hatchback/avtokredit/kia/" itemprop="url">Kia</a>
+            </li>
+                    <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/cars/hatchback/avtokredit/kia/picanto/" itemprop="url">Kia Picanto</a>
+            </li>
+        </ol>
+
+            </div>
+
+
+
+    <header
+        class="offer__header"
+        data-test="offer__header"
+    >
+        <div class="offer__header-wrap">
+
+                            <h1
+                    class="offer__title"
+                    data-test="offer-title"
+                >
+                    <span itemprop="brand"> Kia Picanto </span> <span class="year"> 2013</span> <span>г.</span>
+                </h1>
+
+
+    <div
+        class="a-labels "
+        data-test="labels"
+    >
+
+
+
+
+            <span
+                class="resale-label"
+                data-test="resale-label"
+            >
+                <span
+                    class="resale-label__icon fi-verification-filled"
+                    data-test="resale-label-verification-icon"
+                ></span>
+                Авто от Kolesa.kz
+            </span>
+
+            </div>
+
+                            <div class="offer__actions">
+                    <div class="a-title__buttons ">
+    <div class="tooltip-container a-title__button my-favorite-icon" data-id="168178552" data-category="auto">
+        <span
+            class="icon-kl icon-kl-empty-fav"
+            data-test="icon-favorites-empty"
+        ></span>
+        <div class="tooltip">
+            Добавить в избранное        </div>
+    </div>
+    <div class="tooltip-container a-title__button js-note-edit offer__note-edit" data-id="168178552">
+        <span class="icon-kl icon-kl-note-gray"></span>
+        <div class="tooltip">
+            Добавить заметку        </div>
+    </div>
+</div>
+                </div>
+                    </div>
+                    <div class="note offer__note" data-id="168178552">
+    <div class="note__message">
+        <span class="note__message-content js-note-message" data-id="168178552"></span>
+        <div class="tooltip-container note__remove js-note-remove" data-id="168178552">
+            <span class="fi-close-big js__note-remove-button"></span>
+            <div class="tooltip">
+                Удалить заметку            </div>
+        </div>
+    </div>
+    <div class="note__edit">
+        <input type="text" class="note__text" required name="note" placeholder="Заметка к объявлению (видна только вам)">
+        <button class="note__clear fi-close-big js-note-clear"></button>
+        <input type="button" class="note__save js-note-save default-button" value="Сохранить" data-id="168178552">
+    </div>
+</div>
+            </header>
+
+            <section
+                class="offer__container"
+                itemscope=""
+                itemtype="http://schema.org/Product"
+                            >
+                <div class="offer__sidebar">
+                    <div class="offer__sidebar-info">
+                                                    <div class="offer__sidebar-header">
+                                <div
+                                    class="offer__price"
+                                    data-test="offer-price"
+                                >
+                                        4&nbsp;210&nbsp;000
+    <span class="a-tenge">₸</span>
+
+
+                                </div>
+
+                                                                    <div class="offer__credit a-credit">
+                                                                                    <div class="a-credit__wrap">
+                                                <div class="a-credit__row">
+                                                    <h6 class="a-credit__label">
+                                                        Ежемесячный платеж
+                                                    </h6>
+                                                    <div class="a-credit__amount isHighlighted">
+                                                        130&nbsp;013
+                                                        <span class="a-tenge">₸</span>
+                                                    </div>
+                                                </div>
+                                                <div class="a-credit__row">
+                                                    <h6 class="a-credit__label">
+                                                        Первоначальный взнос
+                                                    </h6>
+                                                    <div class="a-credit__amount">
+                                                        210&nbsp;500
+                                                        <span class="a-tenge">₸</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button
+        class="kl-ui-button kl-ui-button--kaspi kl-ui-button--full a-credit__call js__to-calc"
+        data-href="#avtocredit"
+        type="button"
+    >
+        <span class="a-credit__icon fi-kaspi-big"></span>
+
+                    Рассчитать Кредит            </button>
+
+                                    </div>
+                                                            </div>
+
+
+    <div
+        class="offer__parameters"
+        data-test="offer-parameters"
+        itemprop="description"
+    >
+
+
+                                                                                            <dl class="">
+                            <dt class="value-title" title="Город">
+                                <span>Город</span>
+                            </dt>
+                                                            <dd class="value">Алматы</dd>
+                                                    </dl>
+                                                                                                            <dl class="">
+                            <dt class="value-title" title="Поколение">
+                                <span>Поколение</span>
+                            </dt>
+                                                            <dd class="value">2011 - 2015 2 поколение (TA)</dd>
+                                                    </dl>
+                                                                                                            <dl class="">
+                            <dt class="value-title" title="Кузов">
+                                <span>Кузов</span>
+                            </dt>
+                                                            <dd class="value">хэтчбек</dd>
+                                                    </dl>
+                                                                                                            <dl class="">
+                            <dt class="value-title" title="Объем двигателя, л">
+                                <span>Объем двигателя, л</span>
+                            </dt>
+                                                                                                <dd class="value">
+                                        1.2 (бензин)
+                                    </dd>
+                                                                                    </dl>
+                                                                                                            <dl class="">
+                            <dt class="value-title" title="Пробег">
+                                <span>Пробег</span>
+                            </dt>
+                                                                                                <dd class="value">
+                                        111 426 км
+                                    </dd>
+                                                                                    </dl>
+                                                                                                            <dl class="">
+                            <dt class="value-title" title="Коробка передач">
+                                <span>Коробка передач</span>
+                            </dt>
+                                                            <dd class="value">автомат</dd>
+                                                    </dl>
+                                                                                                            <dl class="">
+                            <dt class="value-title" title="Привод">
+                                <span>Привод</span>
+                            </dt>
+                                                            <dd class="value">передний привод</dd>
+                                                    </dl>
+                                                                                                            <dl class="">
+                            <dt class="value-title" title="Руль">
+                                <span>Руль</span>
+                            </dt>
+                                                            <dd class="value">слева</dd>
+                                                    </dl>
+                                                                                                            <dl class="">
+                            <dt class="value-title" title="Цвет">
+                                <span>Цвет</span>
+                            </dt>
+                                                                                                <dd class="value">
+                                        черный
+                                    </dd>
+                                                                                    </dl>
+                                                                                                            <dl class="">
+                            <dt class="value-title" title="Растаможен в Казахстане">
+                                <span>Растаможен в Казахстане</span>
+                            </dt>
+                                                            <dd class="value">Да</dd>
+                                                    </dl>
+                                                            </div>
+
+                    </div>
+                    <div class="offer__sidebar-sticky-wrap">
+                                                    <div class="offer__sidebar-contacts-wrap">
+                                <div
+                                    class="offer__sidebar-contacts js__seller-block"
+                                    data-test="seller-block"
+                                >
+
+
+                                                                                    <div class="offer__wrapper offer__wrapper--resale">
+                                                <div class="offer__title-wrapper">
+                                                    <h5
+                                                        class="offer__seller-title offer__seller-title--resale"
+                                                        data-test="seller-title"
+                                                    >
+                                                        Авто от Kolesa.kz
+                                                    </h5>
+
+                                                                                                            <span
+                                                            class="offer__seller-icon fi-verification-filled"
+                                                            data-test="seller-verification-icon"
+                                                        ></span>
+                                                                                                    </div>
+
+
+                                                                                            </div>
+
+                                        <h6
+                                            class="offer__subtitle"
+                                            data-test="seller-subtitle"
+                                        >
+                                                                                                                                            Проверенные авто, купленные компанией Kolesa.kz у&nbsp;частных продавцов
+                                                                                    </h6>
+                                                                        <div class="offer__contacts">
+                                        <div class="offer__phones">
+                                                                                            <div class="js__seller-phones seller-phones-container is-loading">
+    <div class="loading-spinner"></div>
+</div>
+                                                                                    </div>
+
+                                                                            </div>
+
+                                                                                                                        <div class="offer__resale-link js__seller-address">
+                                                <a
+    href="https://2gis.kz/almaty/directions/points/%7C76.929094,43.351138"
+    target="_blank"
+    class="resale-link"
+>
+    <span
+        class="resale-link__icon fi-location-filled"
+        data-test="resale-icon-location"
+    ></span>
+    <div class="resale-link__content">
+        <p
+            class="resale-link__text"
+            data-test="resale-address"
+        >
+            г. Алматы, Северное Кольцо, 53В
+        </p>
+        <p
+            class="resale-link__subtext"
+            data-test="resale-salon-schedule"
+        >
+            Ежедневно 9:00-20:00
+        </p>
+    </div>
+    <span
+        class="resale-link__icon fi-arrow-small-right"
+        data-test="resale-map-arrow"
+    ></span>
+</a>
+                                            </div>
+
+                                        <a
+                                            href="https://kolesa.kz/cars/?userId=22683244&amp;dd-source=resale_advert"
+                                            type="button"
+                                            class="kl-ui-button kl-ui-button--blue kl-ui-button--full offer__button js__seller-button"
+                                        >
+                                            <p
+                                                class="offer__button-text"
+                                                data-test="resale-button-text"
+                                            >
+                                                Посмотреть все авто
+                                            </p>
+                                            <p
+                                                class="offer__button-subtext"
+                                                data-test="resale-auto-quantity"
+                                            >
+                                                673 авто в продаже
+                                            </p>
+                                        </a>
+
+                                                                                                        </div>
+
+
+                                                                    <div class="offer__benefits">
+
+<div
+    class="resale-benefits"
+    data-test="resale-benefits"
+>
+    <h3
+        class="resale-benefits__title"
+        data-test="resale-benefits-title"
+    >
+        Преимущества авто от&nbsp;Kolesa.kz
+    </h3>
+    <ul class="resale-benefits__wrapper-list">
+                    <li class="resale-benefits__item">
+                <img
+                    src="//kolesa.kz/static/frontend/images/resale/secure-icon-small.svg"
+                    alt="Выгодно"
+                    class="resale-benefits__item-icon"
+                    data-test="resale-secure-icon"
+                >
+                <div>
+                    <p class="resale-benefits__item-text">Выгодно</p>
+                    <p class="resale-benefits__item-subtext">Автокредит с&nbsp;первоначальным взносом&nbsp;от&nbsp;5%</p>
+                </div>
+            </li>
+                    <li class="resale-benefits__item">
+                <img
+                    src="//kolesa.kz/static/frontend/images/resale/cars-safety.svg"
+                    alt="Безопасно"
+                    class="resale-benefits__item-icon"
+                    data-test="resale-safety-icon"
+                >
+                <div>
+                    <p class="resale-benefits__item-text">Безопасно</p>
+                    <p class="resale-benefits__item-subtext">Все авто прошли проверку на&nbsp;юридическую чистоту</p>
+                </div>
+            </li>
+                    <li class="resale-benefits__item">
+                <img
+                    src="//kolesa.kz/static/frontend/images/resale/time-icon-small.svg"
+                    alt="Быстро"
+                    class="resale-benefits__item-icon"
+                    data-test="resale-stopwatch-icon"
+                >
+                <div>
+                    <p class="resale-benefits__item-text">Быстро</p>
+                    <p class="resale-benefits__item-subtext">Покупка и оформление за&nbsp;2&nbsp;часа</p>
+                </div>
+            </li>
+            </ul>
+</div>
+                                    </div>
+
+                                                            </div>
+                                            </div>
+                </div>
+                <div class="offer__content">
+
+
+
+
+
+
+
+                                                <div class="offer__gallery gallery">
+
+
+
+
+
+    <button
+        class="gallery__main js__gallery-main"
+        type="button"
+        data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-full.webp"
+                disabled="disabled"
+    >
+        <picture>
+
+                <source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-750x470.webp 1x,https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-1200x752.webp 1.5x,https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-1200x752.webp 2x" type="image/webp">
+                <source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-750x470.jpg 1x,https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-1200x752.jpg 1.5x,https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-1200x752.jpg 2x" type="image/jpeg">
+
+            <img
+                src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-750x470.webp"
+                alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы"
+                title="Kia Picanto 2013 года за 4 210 000 тг. в Алматы"
+                 onerror="loadErrorHandler(this)"             />
+        </picture>
+            </button>
+
+<ul class="gallery__thumbs-list js__gallery-thumbs">
+                                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb active"
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/1-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/2-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/2-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/2-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/2-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/2-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/2-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 2"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/3-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/3-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/3-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/3-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/3-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/3-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 3"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/4-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/4-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/4-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/4-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/4-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/4-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 4"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/5-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/5-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/5-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/5-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/5-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/5-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 5"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/6-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/6-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/6-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/6-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/6-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/6-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 6"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/7-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/7-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/7-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/7-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/7-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/7-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 7"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/8-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/8-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/8-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/8-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/8-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/8-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 8"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/9-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/9-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/9-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/9-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/9-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/9-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 9"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/10-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/10-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/10-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/10-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/10-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/10-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 10"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/11-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/11-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/11-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/11-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/11-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/11-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 11"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/12-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/12-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/12-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/12-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/12-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/12-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 12"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/13-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/13-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/13-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/13-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/13-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/13-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 13"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    <li class="gallery__thumb">
+                <button
+                    class="gallery__thumb-image js__gallery-thumb "
+                    type="button"
+                    data-content-type="image"
+                    data-href="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/14-full.jpg"
+                >
+                    <picture class=""><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/14-120x90.webp 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/14-240x180.webp 2x" type="image/webp"><source srcset="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/14-120x90.jpg 1x, https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/14-240x180.jpg 2x" type="image/jpeg"><img
+        src="https://astps-photos-kl.kcdn.kz/webp/86/86cb6a0f-d0de-47d3-a8cb-9bb1a0dc35a0/14-120x90.jpg"
+        alt="Kia Picanto 2013 года за 4 210 000 тг. в Алматы – фото 14"
+        width="120"
+        height="90"
+        onerror="loadErrorHandler(this)"
+        loading="lazy"
+        ></picture>                </button>
+            </li>
+                    </ul>
+
+                        </div>
+
+
+
+            <div class="offer__content-block offer__description">
+
+                            <div class="text">
+                    <p>тонировка, дневные ходовые огни, противотуманки, велюр, аудиосистема, bluetooth, MP3, USB, ГУР, ABS, SRS, сигнализация, полный электропакет, центрозамок, кондиционер, мультируль, налог уплачен, техосмотр пройден, вложений не требует</p>
+                </div>
+
+
+
+
+                    </div>
+
+
+                                                    <div class="offer__content-block a-calculator isHidden js__a-calculator" id="avtocredit">
+                                <div class="a-calculator__wrap">
+                                    <h3 class="a-calculator__title">
+                                        Автокредит
+                                    </h3>
+                                    <div
+                                        class="a-calculator__content"
+                                        id="calcRenderBlock"
+                                        data-url="/credit/get-calculator/168178552/"
+                                    ></div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                                                                            <div class="offer__content-block js__average-price">
+    <div class="js__average-price__app average-price-container is-loading">
+        <div class="loading-spinner"></div>
+    </div>
+</div>
+
+                                                                            <div class="offer__content-block offer__info">
+                                <div class="offer__info-views">Объявление посмотрели <span class="nb-views">0 раз</span> c 3 мая</div>
+                                <div class="offer__info-claim">
+                                        <a class="claim-link js-claim" href="/a/claim/168178552/">
+        <span class="fi-block-sign"></span>Пожаловаться    </a>
+
+                                </div>
+                            </div>
+
+
+                                            <ol class="breadcrumbs">            <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/" itemprop="url">Авто в Казахстане</a>
+            </li>
+                    <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/cars/almaty/" itemprop="url">Легковые в Алматы</a>
+            </li>
+                    <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/cars/hatchback/almaty/" itemprop="url">Хэтчбеки 5-дв.. в Алматы</a>
+            </li>
+                    <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/cars/hatchback/avtokredit/almaty/" itemprop="url">Хэтчбеки 5-дв.. Купить в кредит в Алматы</a>
+            </li>
+                    <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/cars/hatchback/avtokredit/kia/almaty/" itemprop="url">Хэтчбеки 5-дв.. Купить в кредит Kia в Алматы</a>
+            </li>
+                    <li class="breadcrumbs__item" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a class="breadcrumbs__link" href="/cars/hatchback/avtokredit/kia/picanto/almaty/" itemprop="url">Хэтчбеки 5-дв.. Купить в кредит Kia Picanto в Алматы</a>
+            </li>
+        </ol>
+
+                </div>
+            </section>
+        </div>
+    </div>
+                    </div>
+                </main>
+            </div>
+
+                            <footer class="ui-footer">
+    <div class="ui-container ">
+        <div class="ui-footer__header">
+            <img
+                src="//kolesa.kz/static/frontend/images/kolesa-logo-new.svg"
+                width="100"
+                alt="kolesa.kz"
+                class="ui-footer__logo"
+            >
+        </div>
+
+
+            <div class="ui-footer__content">
+                <ul class="ui-footer__menu">
+                    <li class="ui-footer__menu-item">
+                        <a class="ui-footer__link" href="https://kolesa.group/" target="_blank">
+                            О компании «Kolesa Group»
+                        </a>
+                    </li>
+                    <li class="ui-footer__menu-item">
+                        <a class="ui-footer__link" href="/messages/?openSupportThread=1">
+                            Написать в Службу заботы
+                        </a>
+                    </li>
+                    <li class="ui-footer__menu-item">
+                        <a class="ui-footer__link" href="https://kolesa.group/career/job?utm_source=kolesaweb&amp;utm_content=footer" target="_blank">
+                            Работа в «Kolesa Group»
+                        </a>
+                    </li>
+                    <li class="ui-footer__menu-item">
+                        <a class="ui-footer__link" href="/sitemap/">
+                            Карта сайта
+                        </a>
+                    </li>
+                </ul>
+                <ul class="ui-footer__menu">
+                    <li class="ui-footer__menu-item">
+                        <a class="ui-footer__link" href="https://special.kolesa.group/reklamodatelyam" target="_blank" rel="nofollow">
+                            Рекламодателям
+                        </a>
+                    </li>
+                    <li class="ui-footer__menu-item">
+                        <a class="ui-footer__link" href="https://kolesa.kz/content/service-regulations/" target="_blank" rel="nofollow">
+                            Правила размещения объявлений
+                        </a>
+                    </li>
+                    <li class="ui-footer__menu-item">
+                        <a class="ui-footer__link" href="https://kolesa.kz/content/agreement/">
+                            Пользовательское соглашение
+                        </a>
+                    </li>
+                </ul>
+                <ul class="ui-footer__menu">
+                    <li class="ui-footer__menu-item">
+                        <a
+                            class="ui-footer__link"
+                            href="https://redirect.appmetrica.yandex.com/serve/818270543760339127"
+                            target="_blank"
+                            rel="nofollow"
+                        >
+                            Скачать приложение
+                        </a>
+                    </li>
+                                            <li class="ui-footer__menu-item">
+                            <a class="ui-footer__link" href="//m.kolesa.kz/a/show/168178552">
+                                Мобильная версия сайта
+                            </a>
+                        </li>
+                                    </ul>
+                <div>
+                    Следите за нашими новостями
+                    <div class="ui-footer__social-links">
+
+
+<ul class="social-links">
+    <li class="social-links__item">
+            <a
+                class="social-links__link"
+                href="https://www.instagram.com/kolesa.kz"
+                rel="nofollow"
+                target="_blank"
+                title="kolesa.kz в Instagram"
+            >
+                <img
+                    class="social-links__icon"
+                    width="24"
+                    height="24"
+                    alt="kolesa.kz в Instagram"
+                    src="//kolesa.kz/static/frontend/images/social/instagram.svg"
+                >
+            </a>
+        </li>
+    <li class="social-links__item">
+            <a
+                class="social-links__link"
+                href="https://www.youtube.com/@kolesakzvideo"
+                rel="nofollow"
+                target="_blank"
+                title="kolesa.kz в YouTube"
+            >
+                <img
+                    class="social-links__icon"
+                    width="24"
+                    height="24"
+                    alt="kolesa.kz в YouTube"
+                    src="//kolesa.kz/static/frontend/images/social/youtube.svg"
+                >
+            </a>
+        </li>
+    <li class="social-links__item">
+            <a
+                class="social-links__link"
+                href="https://t.me/kolesakz_official"
+                rel="nofollow"
+                target="_blank"
+                title="kolesa.kz в Telegram"
+            >
+                <img
+                    class="social-links__icon"
+                    width="24"
+                    height="24"
+                    alt="kolesa.kz в Telegram"
+                    src="//kolesa.kz/static/frontend/images/social/telegram.svg"
+                >
+            </a>
+        </li>
+    <li class="social-links__item">
+            <a
+                class="social-links__link"
+                href="https://www.tiktok.com/@kolesakz"
+                rel="nofollow"
+                target="_blank"
+                title="kolesa.kz в TikTok"
+            >
+                <img
+                    class="social-links__icon"
+                    width="24"
+                    height="24"
+                    alt="kolesa.kz в TikTok"
+                    src="//kolesa.kz/static/frontend/images/social/tiktok.svg"
+                >
+            </a>
+        </li>
+    <li class="social-links__item">
+            <a
+                class="social-links__link"
+                href="https://vk.com/kolesakz"
+                rel="nofollow"
+                target="_blank"
+                title="kolesa.kz в VK"
+            >
+                <img
+                    class="social-links__icon"
+                    width="24"
+                    height="24"
+                    alt="kolesa.kz в VK"
+                    src="//kolesa.kz/static/frontend/images/social/vk.svg"
+                >
+            </a>
+        </li>
+    <li class="social-links__item">
+            <a
+                class="social-links__link"
+                href="https://www.facebook.com/Kolesakz"
+                rel="nofollow"
+                target="_blank"
+                title="kolesa.kz в Facebook"
+            >
+                <img
+                    class="social-links__icon"
+                    width="24"
+                    height="24"
+                    alt="kolesa.kz в Facebook"
+                    src="//kolesa.kz/static/frontend/images/social/facebook.svg"
+                >
+            </a>
+        </li>
+    </ul>
+                    </div>
+                </div>
+            </div>
+
+        <div class="ui-footer__footer">
+            © 2006 — 2024 АО Колеса
+            <img class="helper-pixel" src="/images/pixel.png"/>
+        </div>
+    </div>
+</footer>
+                    </div>
+            <script>
+            window.digitalData = {"version":"1.1.2","page":{"type":"product","category":"Advert Product Detail"},"website":{"environment":"production","type":"desktop"},"user":{"isLoggedIn":false},"product":{"name":"Kia Picanto 2013 г.","id":168178552,"publicationDate":"2024-05-03T23:59:59+05:00","isCreditAvailable":true,"isNewAuto":false,"isTradeInAuto":false,"seller":{"userId":22683244},"photoCount":14,"section":"auto","categoryString":"auto.car","category":["auto","auto.car"],"categoryId":"2","availability":"В наличии","region":"KZ-ALM","city":"almaty","attributes":{"model":"Picanto","brand":"Kia","avgPrice":4488000},"lastUpdate":"2024-05-03T12:54:18+05:00","status":"live","unitPrice":4210000,"url":"https:\/\/kolesa.kz\/a\/show\/168178552","appliedPaidServices":["Стать VIP","Отправить в горячие","Поднято наверх"],"video":false},"context":{"ip":"87.255.216.75"}};
+
+    if (typeof listing != 'undefined'
+        && listing.items.length > 0
+        && typeof window.digitalData.listing != 'undefined') {
+        Object.assign(window.digitalData.listing, listing);
+    }
+    </script>
+    <script type="text/x-template" id="guideHintTemplate">
+        <div class="hints">
+    <div class="hints__container">
+        <div class="hints__main">
+            <div class="hints__main-title">
+                {{ title }}            </div>
+            <div class="hints__main-text">
+                {{ text }}            </div>
+            <button class="hints__main-close-button close-guide-hint" type="button">
+                Скрыть подсказку            </button>
+            <span class="hints__main-caret"></span>
+        </div>
+    </div>
+</div>    </script>
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-20095517-1', 'kolesa.kz');
+
+    ga('require', 'GTM-KT7SL72');
+
+    ga('send', 'pageview');
+</script>
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter10095472 = new Ya.Metrika({id:10095472,
+                    clickmap:true,
+                    accurateTrackBounce:true,
+                    webvisor: false,
+                    ut:"noindex",params:window.yaParams||{ }});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/10095472?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M6NQ9S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script type="text/javascript">
+    var yaParams = {
+        region : "Все регионы",
+        cat    : "cars"
+    };
+</script>
+                <script type="application/javascript" src="//kolesa.kz/static/frontend/js/ru.b9301e5f44.js"></script>
+
+        <script type="application/javascript" src="//kolesa.kz/static/frontend/js/main-old-browser.1bdf315a9f.js"></script>
+<script type="application/javascript" src="//kolesa.kz/static/frontend/js/main-vendor.5b874437d3.js"></script>
+<script type="application/javascript" src="//kolesa.kz/static/frontend/js/main-common.a2cb7e20d3.js"></script>
+<script type="application/javascript" src="//kolesa.kz/static/frontend/js/main-payment.5a74d0642f.js"></script>
+
+        <script type="application/javascript" src="//kolesa.kz/static/frontend/js/main-hints.d0655ea60c.js"></script>
+
+
+                    <script src="https://id.kolesa.kz/authToken.js"></script>
+
+    <script type="application/javascript" src="//kolesa.kz/static/frontend/js/main-a.6d0608ef30.js"></script>
+
+    <script type="text/x-template" id="fav-register">
+    <div class="merge row">
+        <div class="col-sm-2">
+            <div class="merge-modal-icon">
+                <span class="fi-tab-star-filled"></span>
+            </div>
+        </div>
+        <div class="col-sm-10">
+            <div class="modal-header">
+                Необходимо авторизоваться            </div>
+            <div class="modal-body">
+                <div>
+                                                            Чтобы сохранить больше 10 избранных объявлений нужно <a href="/signin?backUrl=https%3A%2F%2Fkolesa.kz%2Fa%2Fshow%2F168178552">войти</a> или <a href="/passport/register/">зарегистрироваться</a>                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="/signin?backUrl=https%3A%2F%2Fkolesa.kz%2Fa%2Fshow%2F168178552" class="btn button">
+                    Войти                </a>
+                <a href="/passport/register/">
+                    Не зарегистрирован?                </a>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+
+    </body>
+</html>
