@@ -22,6 +22,10 @@ function fetchData() {
 
       // Fetch the HTML content of the active tab
       chrome.scripting.executeScript(
+        {
+          target: { tabId: activeTab.id },
+          func: () => document.documentElement.outerHTML
+        },
         (results) => {
           if (chrome.runtime.lastError || !results || !results[0]) {
             console.error('Error executing script:', chrome.runtime.lastError);
