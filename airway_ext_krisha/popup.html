@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AirWay</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to external CSS file -->
+  <link href="./assets/fonts/Montserrat-Black.ttf" rel="stylesheet"> <!-- Link to the font CSS file -->
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="margin-left: 5em">AirWay <img src="./assets/images/krisha_logo.png" alt="Krisha Logo" style="width: 100px; height: 30px;" /></h1>
+  <div style="width: 400px" id="content">
+    <div style="margin-right: 1em; margin-left: 1em; font-size: 18px; font-family: 'Montserrat-Black'" id="result"></div>
+    <button id="viewReport" class="soft-styled-button">Просмотреть подробный отчет</button>
+  </div>
+  
+  <div class="infrastructure-section hidden">
+    <h2>Инфраструктура</h2>
+    <label for="objectType">Чтобы вы хотели найти?</label>
+    <input type="text" id="objectType" name="objectType" placeholder="магазин, школа, т.д">
+    <div style="margin-top: 5px; margin-bottom: 5px"></div>
+    <label for="distance">Дистанция:</label>
+    <select id="distance" name="distance">
+      <option value="300">5 мин пешком</option>
+      <option value="500">10 мин пешком</option>
+      <option value="900">15 мин пешком</option>
+      <option value="1200">20 мин пешком</option>
+    </select>
+    <button id="findObjects" class="soft-styled-find-button">Найти</button>
+    <div style="font-size: 18px;" id="infrastructureResult"></div>
+
+  </div>
+  <script src="popup.js"></script>
+
+</body>
+</html>

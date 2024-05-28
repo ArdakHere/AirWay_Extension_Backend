@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Kolesa Listing Analyzer",
+  "version": "1.0",
+  "description": "Analyze Kolesa car listings for air pollution",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "./assets/images/car.png"
+    }
+  },
+  "web_accessible_resources":[
+      {"resources":[
+        "krisha_module.html",
+        "krisha_module.js",
+        "kolesa_module.html",
+        "kolesa_module.js"
+      ],
+      "matches": ["<all_urls>"]
+  }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

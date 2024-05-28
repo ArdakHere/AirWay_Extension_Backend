@@ -1,0 +1,141 @@
+#listing-analyzer {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+body {
+    font-family: 'Montserrat-Black', sans-serif;
+}
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('./assets/fonts/Montserrat-Regular.ttf') format('truetype'); /* Adjust the path and format as necessary */
+    /* Add other font formats (e.g., woff, woff2) for better browser compatibility */
+  }
+.scaled-icon {
+    scale: 0.5;
+  }
+
+.infrastructure-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #9ecbf7; /* Adjust the alpha value (last parameter) to control opacity */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.infrastructure-section h2 {
+  color: #0b0b0b;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.infrastructure-section label {
+	margin-left: 2px;
+    font-size: 16px;
+    color: #0b0b0b;
+}
+
+.infrastructure-section input[type="text"],
+.infrastructure-section select {
+  width: 250px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.infrastructure-section button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #1c8bfa;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.infrastructure-section button:hover {
+  background-color: #1c8bfa;
+}
+
+.soft-styled-button {
+  background: #1c8bfa; /* Background color */
+  color: #fff; /* Text color */
+  font-size: 16px;
+  font-family: 'Montserrat-Black', sans-serif; /* Font family */
+  border-radius: 8px; /* Rounded corners */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; /* Center the content */
+  margin-top: 10px;
+  margin-left: 45px;
+  padding: 10px 20px; /* Padding for better spacing */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.soft-styled-button:hover {
+  background-color: #1b161a; /* Slightly darker background on hover */
+  transform: translateY(-1px); /* Lift the button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.soft-styled-button:active {
+  background-color: #1b161a; /* Even darker background on click */
+  transform: translateY(1px); /* Push the button down on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+.soft-styled-find-button {
+  background: #1c8bfa; /* Background color */
+  color: #fff; /* Text color */
+  font-size: 16px;
+  font-family: 'Montserrat-Black', sans-serif; /* Font family */
+  border-radius: 8px; /* Rounded corners */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 1s ease-in-out, transform 1s ease-in-out, box-shadow 1s ease-in-out; /* Smooth transitions */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.soft-styled-find-button:hover {
+  background-color: #1b161a; /* Slightly darker background on hover */
+  transform: translateY(-1px); /* Lift the button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.soft-styled-find-button:active {
+  background-color: #1b161a; /* Even darker background on click */
+  transform: translateY(1px); /* Push the button down on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+
+#extension-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+#extension-container .infrastructure-section {
+  display: none;
+}
+
+#viewReport {
+  display: none;
+}
