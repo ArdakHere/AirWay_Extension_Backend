@@ -34,7 +34,7 @@ function fetchData() {
           }
           const htmlContent = results[0].result;
           if(parseDataFromHTML(htmlContent)){
-            fetch('http://3.75.158.163/analyze/kolesa', {
+            fetch('https://airway-chrome-extension.onrender.com/analyze/kolesa', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ function parseDataFromHTML(html) {
 }
 
 function fetchReportImage(data_dict) {
-  fetch('http://3.75.158.163/get_kolesa_report', {
+  fetch('https://airway-chrome-extension.onrender.com/get_kolesa_report', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

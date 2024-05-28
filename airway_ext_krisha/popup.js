@@ -36,7 +36,7 @@ function fetchData() {
         if (parsedData.coords) {
           console.log('Coordinates found:', parsedData.coords);
 
-          fetch('http://3.75.158.163/analyze/krisha', {
+          fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ function fetchData() {
 }
 
 function fetchReportImage(data_dict) {
-  fetch('http://3.75.158.163/get_krisha_report', {
+  fetch('https://airway-chrome-extension.onrender.com/get_krisha_report', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -217,7 +217,7 @@ function findInfrastructure() {
         if (coords) {
           console.log('Coordinates found:', coords);
 
-          fetch('http://3.75.158.163/find_objects', {
+          fetch('https://airway-chrome-extension.onrender.com/find_objects', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
