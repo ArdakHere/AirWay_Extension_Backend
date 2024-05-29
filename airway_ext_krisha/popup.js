@@ -42,7 +42,7 @@ function fetchData() {
                 headers: {
                   'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({url: activeTab.url, coords: parsedData.coords}),
+                body: JSON.stringify({coords: parsedData.coords}),
               })
                   .then(response => {
                     if (!response.ok) {
@@ -54,7 +54,7 @@ function fetchData() {
                     data.city = parsedData.city;  // Add city data to the response data
                     console.log('Response data:', data);
                     displayResult(data);
-                    saveResult(activeTab.url, data);  // Save the result to chrome.storage.local
+                    saveResult(data);  // Save the result to chrome.storage.local
                     // Show the infrastructure section
                     document.querySelector('.infrastructure-section').classList.remove('hidden');
                     fetchReportImage(data);
