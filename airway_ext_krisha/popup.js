@@ -32,7 +32,8 @@ function fetchData() {
           }
           const htmlContent = results[0].result;
           const parsedData = parseDataFromHTML(htmlContent);
-          if(parseDataFromHTML(htmlContent)){
+          if(parseDataFromHTML(parsedData.coords)){
+            console.log('Parsed data:', parsedData);
             fetch('https://airway-chrome-extension.onrender.com/analyze/kolesa_krisha', {
               method: 'POST',
               headers: {
