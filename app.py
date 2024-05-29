@@ -115,7 +115,7 @@ def analyze_krisha():
 
     except Exception as e:
         print(f"Error: {e}")
-        return jsonify({"error": "Internal server error"}), 500
+        return jsonify({"error": "Internal server error"}), 6969
 
 @app.route("/get_krisha_report", methods=["POST"])
 def get_krisha_report():

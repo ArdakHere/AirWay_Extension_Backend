@@ -32,14 +32,13 @@ function fetchData() {
           }
           const htmlContent = results[0].result;
           const parsedData = parseDataFromHTML(htmlContent);
-          if(parseDataFromHTML(parsedData.coords)){
+          // if(parseDataFromHTML(parsedData.coords)){
             console.log('Parsed data:', parsedData);
             fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
               },
-
               body: JSON.stringify({ url: activeTab.url, coords:  parsedData.coords}), // Include HTML content in the body
             })
             .then(response => {
@@ -61,9 +60,9 @@ function fetchData() {
               console.error('Fetch error:', error);
               document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
             });
-          } else {
-            document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
-          }
+          // } else {
+          //   document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
+          // }
         }
       );
     });
