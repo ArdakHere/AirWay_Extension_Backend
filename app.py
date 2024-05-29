@@ -57,9 +57,10 @@ def analyze_kolesa():
         print(f"Error: {e}")
         return jsonify({"error": "Internal server error"}), 500
 
-@app.route("/analyze/krisha", methods=["POST"])
+@app.route("/analyze/kolesa_krisha", methods=["POST"])
 def analyze_krisha():
     try:
+        print("yoooo")
         define_openAI_client_with_key_krisha("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
 
         data = request.json
