@@ -1,77 +1,83 @@
 document.addEventListener('DOMContentLoaded', async function () {
   const hasSavedResult = await displaySavedResult();
+  document.getElementById('viewReport').addEventListener('click', viewReport);
+
   if (!hasSavedResult) {
     fetchData();
   }
   document.getElementById('findObjects').addEventListener('click', findInfrastructure);
-  document.getElementById('viewReport').addEventListener('click', viewReport);
 });
 
 function fetchData() {
-  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    const activeTab = tabs[0];
+  try {
+    chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
+      const activeTab = tabs[0];
 
-    // Clear stored image data when a new listing is accessed
-    chrome.storage.local.remove('reportImageData', function () {
-      console.log('Cleared stored report image data');
-    });
+      // Clear stored image data when a new listing is accessed
+      chrome.storage.local.remove('reportImageData', function () {
+        console.log('Cleared stored report image data');
+      });
 
-    // Fetch the HTML content of the active tab
-    chrome.scripting.executeScript(
-      {
-        target: { tabId: activeTab.id },
-        func: () => document.documentElement.outerHTML
-      },
-      (results) => {
-        if (chrome.runtime.lastError || !results || !results[0]) {
-          console.error('Error executing script:', chrome.runtime.lastError);
-          document.getElementById('result').innerHTML = '<p>Error retrieving HTML content</p>';
-          return;
-        }
-
-        const htmlContent = results[0].result;
-        const parsedData = parseDataFromHTML(htmlContent);
-
-        if (parsedData.coords) {
-          console.log('Coordinates found:', parsedData.coords);
-
-          fetch('http://127.0.0.1:5000/analyze/krisha', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ url: activeTab.url, coords: parsedData.coords }),
-          })
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
+      // Fetch the HTML content of the active tab
+      chrome.scripting.executeScript(
+          {
+            target: {tabId: activeTab.id},
+            func: () => document.documentElement.outerHTML
+          },
+          (results) => {
+            if (chrome.runtime.lastError || !results || !results[0]) {
+              console.error('Error executing script:', chrome.runtime.lastError);
+              document.getElementById('result').innerHTML = '<p>Error retrieving HTML content</p>';
+              return;
             }
-            return response.json();
-          })
-          .then(data => {
-            data.city = parsedData.city;  // Add city data to the response data
-            console.log('Response data:', data);
-            displayResult(data);
-            saveResult(activeTab.url, data);  // Save the result to chrome.storage.local
-            // Show the infrastructure section
-            document.querySelector('.infrastructure-section').classList.remove('hidden');
-            fetchReportImage(data);
-          })
-          .catch(error => {
-            console.error('Fetch error:', error);
-            document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
-          });
-        } else {
-          console.error('Coordinates not found');
-          document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
-        }
-      }
-    );
-  });
+
+            const htmlContent = results[0].result;
+            const parsedData = parseDataFromHTML(htmlContent);
+
+            if (parsedData.coords) {
+              console.log('Coordinates found:', parsedData.coords);
+
+              fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({coords: parsedData.coords}),
+              })
+                  .then(response => {
+                    if (!response.ok) {
+                      throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                  })
+                  .then(data => {
+                    data.city = parsedData.city;  // Add city data to the response data
+                    console.log('Response data:', data);
+                    displayResult(data);
+                    saveResult(data);  // Save the result to chrome.storage.local
+                    // Show the infrastructure section
+                    document.querySelector('.infrastructure-section').classList.remove('hidden');
+                    fetchReportImage(data);
+                  })
+                  .catch(error => {
+                    console.error('Fetch error:', error);
+                    document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
+                  });
+            } else {
+              console.error('Coordinates not found');
+              document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
+            }
+          }
+      );
+    });
+  } catch (error) {
+    console.error('Error in fetchData:', error);
+  }
+
 }
 
 function fetchReportImage(data_dict) {
-  fetch('http://127.0.0.1:5000/get_report', {
+  fetch('https://airway-chrome-extension.onrender.com/get_krisha_report', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -141,11 +147,12 @@ function displayResult(data) {
       </div>
     </ul>
   `;
+  document.getElementById('viewReport').style.display = 'inline-block';
 
 
   document.getElementById('result').innerHTML = resultHtml;
 
-  
+
 
 }
 
@@ -215,7 +222,7 @@ function findInfrastructure() {
         if (coords) {
           console.log('Coordinates found:', coords);
 
-          fetch('http://127.0.0.1:5000/find_objects', {
+          fetch('https://airway-chrome-extension.onrender.com/find_objects', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

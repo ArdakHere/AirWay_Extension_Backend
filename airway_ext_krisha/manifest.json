@@ -19,10 +19,8 @@
   },
   "web_accessible_resources":[
       {"resources":[
-        "krisha_module.html",
-        "krisha_module.js",
-        "kolesa_module.html",
-        "kolesa_module.js"
+        "popup.html",
+        "popup.js"
       ],
       "matches": ["<all_urls>"]
   }
