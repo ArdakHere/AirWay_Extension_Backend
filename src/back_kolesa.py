@@ -61,9 +61,9 @@ def get_car_recommendations(price: int) -> str:
     ev_recommendations_str = "\n".join(ev_recommendations)
 
     # Combine non-ev and ev recommendations into a single string
-    recommendations_str = f"\n\nНе электрические авто:\n{non_ev_recommendations_str} | \n\nЭлектрические авто:\n{ev_recommendations_str}"
+    recommendations_str = f"\n\nНе электрические авто:\n{non_ev_recommendations_str} \n\nЭлектрические авто:\n{ev_recommendations_str}"
 
-    return recommendations_str
+    return recommendations_str, non_ev_recommendations_str, ev_recommendations_str
 
 def read_remote_kolesa_page(html_car_data: str) -> dict:
     """
@@ -105,17 +105,21 @@ def read_remote_kolesa_page(html_car_data: str) -> dict:
         elif title == "Привод":
             car_info["N-wheel drive"] = value.strip()
 
+    if car_info["distance run (km)"] is None:
+        car_info["distance run (km)"] = "Новая, без пробега"
+
     name_pattern = r'"name":"(.*?)"'
     name_match = re.search(name_pattern, html_car_data)
     if name_match:
         car_info["car_title"] = name_match.group(1)
         car_info["car_title"] = car_info["car_title"].split(' г.')[0]
-
+    print(car_info)
     # Translating car information
     translator = Translator(to_lang="en", from_lang="ru")
-    for key, value in car_info.items():
-        if value is not None:
-            car_info[key] = translator.translate(value)
+    # for key, value in car_info.items():
+    #     if value is not None:
+    #         car_info[key] = translator.translate(value)
+
     return car_info
 
 def extract_co2_emissions(co2_emissions_str: str) -> int:

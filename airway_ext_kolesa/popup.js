@@ -117,7 +117,7 @@ function fetchReportImage(data_dict) {
 
 function displayResult(data) {
   // Extract required properties
-  const { gas_mileage, effect_index, rgbColor, recommendations } = data;
+  const { gas_mileage, effect_index, rgbColor, ev_car_recs,  nonev_car_recs} = data;
   console.log("Displaying result:", data);
 
   // Convert the rgbColor array to a CSS-compatible RGB string
@@ -134,7 +134,11 @@ function displayResult(data) {
       </div>
       <div style="margin-top: 8px; margin-bottom: 8px">
         <img src="./assets/images/car_options.png" alt="Park Icon" style="width: 32px; height: 32px; transform: translateY(5px)" />
-        <strong style="font-size: 20px">Рассмотрите более экологичные автомобили по схожей \n ценей : <span style="color: black"; font-weight: bold;">${recommendations}</span></strong>
+        <strong style="font-size: 20px">Рассмотрите более экологичные автомобили по схожей \n цене: 
+            <span style="color: black";"> <br> <span style="color: rgba(0,47,153,0.76)"> Электромобили </span><br> ${ev_car_recs} 
+            <span style="color: black";"> <br> <span style="color: rgba(0,47,153,0.76)"> Обычные автомобили </span><br> ${nonev_car_recs}</span></strong>
+        </span></strong>
+        
       </div>
     </div>`;
     document.getElementById('viewReport').style.display = 'inline-block';

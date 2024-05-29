@@ -28,7 +28,7 @@ def analyze_kolesa():
 
         gas_mileage = car_emission_data["Gas expenditure"]
         co2_val = car_emission_data["CO2"]
-        car_recommendations = get_car_recommendations(car_data['price'])
+        car_recommendations_ev_nonev, nonev_recs, ev_recs = get_car_recommendations(car_data['price'])
 
         gas_mileage_number = extract_gas_mileage(gas_mileage)
         co2_val_number = extract_co2_emissions(co2_val)
@@ -53,7 +53,8 @@ def analyze_kolesa():
                          'effect_index': effect_index,
                          "effect_index_numeric": effect_index_numeric,
                          'rgbColor': rgbColor,
-                         'recommendations': car_recommendations,
+                         'ev_car_recs': ev_recs,
+                         'nonev_car_recs': nonev_recs,
                          }
         emission_data.update(car_data)
         return jsonify(emission_data)

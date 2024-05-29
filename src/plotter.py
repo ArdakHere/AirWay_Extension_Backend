@@ -287,25 +287,25 @@ def test_generate_report_for_an_apartment(
 
     drawCertificate.text(
         (270, 280),
-        "Насколько грязный воздух?",
+        "Насколько чистый воздух?",
         font=labelFont,
         fill=(0, 0, 0))
-    drawCertificate.text((125, 550), "Концентрация вредных частиц в воздухе", font=labelFont, fill=(0, 0, 0))
+    drawCertificate.text((45, 550), "Концентрация вредных частиц в воздухе", font=labelFont, fill=(0, 0, 0))
 
-    drawCertificate.text((125, 750), "PM 2.5", font=labelFont, fill=(0, 0, 0))
-    drawCertificate.text((350, 750), f"{pm25}", font=labelFont, fill=(0, 0, 0))
+    drawCertificate.text((125, 750), "PM 2.5", font=labelFont, fill=(185, 0, 0))
+    drawCertificate.text((400, 750), f"{pm25}", font=labelFont, fill=(0, 0, 0))
     drawCertificate.text(
         (50, 820),
         "Концентрация вредных взвешенных \n твердых микрочастиц \n (2,5 мкм в диаметре), содержащихся в воздухе",
         font=metricDescriptionFont,
         fill=(0, 0, 0))
 
-    drawCertificate.text((125, 920), "PM 10", font=labelFont, fill=(0, 0, 0))
-    drawCertificate.text((350, 920), f"{pm10}", font=labelFont, fill=(0, 0, 0))
+    drawCertificate.text((125, 920), "PM 10", font=labelFont, fill=(185, 0, 0))
+    drawCertificate.text((400, 920), f"{pm10}", font=labelFont, fill=(0, 0, 0))
     drawCertificate.text((50, 990), "Концентрация вредных взвешенных \n твердых микрочастиц (10 мкм в диаметре), \n содержащихся в воздухе", font=metricDescriptionFont, fill=(0, 0, 0))
 
-    drawCertificate.text((125, 1090), "CO", font=labelFont, fill=(0, 0, 0))
-    drawCertificate.text((350, 1090), f"{co}", font=labelFont, fill=(0, 0, 0))
+    drawCertificate.text((125, 1090), "CO", font=labelFont, fill=(185, 0, 0))
+    drawCertificate.text((410, 1090), f"{co}", font=labelFont, fill=(0, 0, 0))
     drawCertificate.text((50, 1160), "Концентрация вредных мооноксида \n углерода содержащегося \n в воздухе", font=metricDescriptionFont, fill=(0, 0, 0))
 
     if aqIndex <= 40:
@@ -316,7 +316,7 @@ def test_generate_report_for_an_apartment(
         emoji_image.thumbnail((emoji_width, emoji_height))
 
         template.paste(emoji_image, (630, 370))
-        drawCertificate.text((450, 630), "Минимальный, воздух чист", font=indexWarnFont, fill=(Rpm25, Gpm25, Bpm25))
+        drawCertificate.text((450, 630), "Минимальная, воздух чист", font=indexWarnFont, fill=(Rpm25, Gpm25, Bpm25))
 
     if 50 >= aqIndex > 40:
         emoji_image = Image.open("./src/assets/img/icons_for_report/emojis/slightly_smiling_emoji.png")
@@ -333,7 +333,7 @@ def test_generate_report_for_an_apartment(
         emoji_image.thumbnail((emoji_width, emoji_height))
         template.paste(emoji_image, (630, 370))
 
-        drawCertificate.text((480, 630), "Средний", font=indexWarnFont, fill=(Rpm25, Gpm25, Bpm25))
+        drawCertificate.text((480, 630), "Средняя", font=indexWarnFont, fill=(Rpm25, Gpm25, Bpm25))
     if 80 >= aqIndex > 70:
         emoji_image = Image.open("./src/assets/img/icons_for_report/emojis/unhappy_emoji.png")
         emoji_width = int(emoji_image.width * 0.2)
@@ -341,7 +341,7 @@ def test_generate_report_for_an_apartment(
         emoji_image.thumbnail((emoji_width, emoji_height))
         template.paste(emoji_image, (630, 370))
 
-        drawCertificate.text((480, 630), "Повышенный", font=indexWarnFont, fill=(Rpm25, Gpm25, Bpm25))
+        drawCertificate.text((480, 630), "Повышенная", font=indexWarnFont, fill=(Rpm25, Gpm25, Bpm25))
     if 90 > aqIndex > 80:
         emoji_image = Image.open("./src/assets/img/icons_for_report/emojis/confounded_emoji.png")
         emoji_width = int(emoji_image.width * 0.2)
@@ -349,7 +349,7 @@ def test_generate_report_for_an_apartment(
         emoji_image.thumbnail((emoji_width, emoji_height))
         template.paste(emoji_image, (630, 370))
 
-        drawCertificate.text((480, 630), "Высокий", font=indexWarnFont, fill=(255, 0, 0))
+        drawCertificate.text((480, 630), "Высокая", font=indexWarnFont, fill=(255, 0, 0))
     if aqIndex >= 90:
 
         emoji_image = Image.open("./src/assets/img/icons_for_report/emojis/mask_emoji.png")
@@ -358,7 +358,7 @@ def test_generate_report_for_an_apartment(
         emoji_image.thumbnail((emoji_width, emoji_height))
         template.paste(emoji_image, (630, 370))
 
-        drawCertificate.text((460, 630), "Опасный", font=indexWarnFont, fill=(154, 14, 14))
+        drawCertificate.text((460, 630), "Опасная", font=indexWarnFont, fill=(154, 14, 14))
     drawCertificate.text((50, 800), text, font=textFont, fill=(0, 0, 0), spacing=10)
 
     # solution to circular import, if removed the error will reappear
@@ -473,7 +473,7 @@ def generate_report_for_a_car(
     third_lvl_heading = ImageFont.truetype('./src/assets/font/FreeMonoBold.ttf', 45)
 
     drawCertificate.text(
-        (100, 70), "Отчет о загрязнении воздуха (авто)", font=titleFont, fill=(0, 0, 0))
+        (80, 70), "Отчет о загрязнении воздуха (авто)", font=titleFont, fill=(0, 0, 0))
     drawCertificate.text(
         (70, 170), "Данные авто:", font=second_lvl_heading, fill=(0, 0, 0))
     drawCertificate.text(
@@ -488,11 +488,15 @@ def generate_report_for_a_car(
     drawCertificate.text(
         (100, 390), f"Пробег: {distance_run}",
         font=textFont, fill=(0, 0, 0))
+
+    # amount = price
+    # formatted_price = f"{amount:,}"
+
     drawCertificate.text(
         (100, 440), f"Цена: {price} тенге",
         font=textFont, fill=(0, 0, 0))
     drawCertificate.text(
-        (70, 510), "Расход топлива/Машина загрязняет \n воздух на столько:",
+        (70, 510), "Расход топлива/Негативный эффект \n автомобиля на чистоту воздуха:",
         font=second_lvl_heading, fill=(0, 0, 0))
 
     gas_mileage_icon = Image.open(PICTOGRAMS_PATH + "gas_mileage_icon.png")
@@ -523,9 +527,8 @@ def generate_report_for_a_car(
         drawCertificate.text(
             (160, 820), f"{gas_mileage_number} L/100km", font=indexWarnFont, fill=(R, G, B))
         template.paste(gas_mileage_icon, (270, 695))
-
         drawCertificate.text(
-            (710, 820), "Среднее загрязнение", font=indexWarnFont, fill=(R, G, B))
+            (870, 820), "Средний", font=indexWarnFont, fill=(R, G, B))
         template.paste(ecology_index_icon, (935, 695))
     if ecofriendly_index_car >= 0 and ecofriendly_index_car < 0.2:
         R, G, B = 27, 152, 3
@@ -534,7 +537,7 @@ def generate_report_for_a_car(
         template.paste(gas_mileage_icon, (270, 695))
 
         drawCertificate.text(
-            (730, 820), "Низкое загрязнение", font=indexWarnFont, fill=(R, G, B))
+            (870, 820), "Низкий", font=indexWarnFont, fill=(R, G, B))
         template.paste(ecology_index_icon, (935, 695))
 
     # drawCertificate.text((70, 940), "Рекомендации:", font=second_lvl_heading, fill=(0, 0, 0))
@@ -544,8 +547,10 @@ def generate_report_for_a_car(
     #     drawCertificate.text((100, y_val), recommendation, font=recommendationFont, fill=(0, 0, 0))
     #     y_val+=50
 
+    ev_nonev_rec_string, non_ev_recs_string, ev_recs_string = get_car_recommendations(price)
+
     drawCertificate.text((70, 940), "Рассмотрите эти авто за схожую цену:", font=second_lvl_heading, fill=(0, 0, 0))
-    drawCertificate.text((100, 1020), get_car_recommendations(price), font=textFont, fill=(0, 0, 0))
+    drawCertificate.text((100, 1020), ev_nonev_rec_string, font=textFont, fill=(0, 0, 0))
 
     template.save(pathToSave)
 
