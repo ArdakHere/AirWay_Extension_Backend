@@ -37,12 +37,12 @@ function fetchData() {
             if (parsedData.coords) {
               console.log('Coordinates found:', parsedData.coords);
 
-              fetch('http://127.0.0.1:5000/analyze/krisha', {
+              fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({coords: parsedData.coords}),
+                body: JSON.stringify({html: htmlContent, coords: parsedData.coords}),
               })
                   .then(response => {
                     if (!response.ok) {
