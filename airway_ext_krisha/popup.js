@@ -19,56 +19,51 @@ function fetchData() {
       });
 
       // Fetch the HTML content of the active tab
-      chrome.scripting.executeScript(
-          {
-            target: {tabId: activeTab.id},
-            func: () => document.documentElement.outerHTML
-          },
-          (results) => {
-            if (chrome.runtime.lastError || !results || !results[0]) {
-              console.error('Error executing script:', chrome.runtime.lastError);
-              document.getElementById('result').innerHTML = '<p>Error retrieving HTML content</p>';
-              return;
-            }
-
-            const htmlContent = results[0].result;
-            const parsedData = parseDataFromHTML(htmlContent);
-
-            if (parsedData.coords) {
-              console.log('Coordinates found:', parsedData.coords);
-              fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({html: htmlContent, coords: parsedData.coords}),
-              })
-                  .then(response => {
-                    if (!response.ok) {
-                      throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                  })
-                  .then(data => {
-                    data.city = parsedData.city;  // Add city data to the response data
-                    console.log('Response data:', data);
-                    displayResult(data);
-                    saveResult(data);  // Save the result to chrome.storage.local
-                    // Show the infrastructure section
-                    document.querySelector('.infrastructure-section').classList.remove('hidden');
-                    fetchReportImage(data);
-                  })
-                  .catch(error => {
-                    console.log(htmlContent)
-                    console.log(parsedData.coords)
-                    console.error('Fetch error:', error);
-                    document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
-                  });
-            } else {
-              console.error('Coordinates not found');
-              document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
-            }
+     chrome.scripting.executeScript(
+        {
+          target: { tabId: activeTab.id },
+          func: () => document.documentElement.outerHTML
+        },
+        (results) => {
+          if (chrome.runtime.lastError || !results || !results[0]) {
+            console.error('Error executing script:', chrome.runtime.lastError);
+            document.getElementById('result').innerHTML = '<p>Error retrieving HTML content</p>';
+            return;
           }
+          const htmlContent = results[0].result;
+          const coords = parseDataFromHTML(htmlContent).coords;
+
+          if(parseDataFromHTML(htmlContent)){
+            fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ url: activeTab.url, coords:  coords}), // Include HTML content in the body
+            })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(data => {
+              data.city = parsedData.city;  // Add city data to the response data
+              console.log('Response data:', data);
+              displayResult(data);
+              saveResult(activeTab.url, data);  // Save the result to chrome.storage.local
+              // Show the infrastructure section
+              document.querySelector('.infrastructure-section').classList.remove('hidden');
+              fetchReportImage(data);
+            })
+            .catch(error => {
+              console.error('Fetch error:', error);
+              document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
+            });
+          } else {
+            document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
+          }
+        }
       );
     });
   } catch (error) {
