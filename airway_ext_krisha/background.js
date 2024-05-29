@@ -2,7 +2,7 @@
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.action === "analyze") {
-      chrome.tabs.executeScript(sender.tab.id, { file: "content.js" }, function () {
+      chrome.tabs.executeScript(sender.tab.id, { file: ".js" }, function () {
         chrome.tabs.sendMessage(sender.tab.id, { url: request.url }, function (response) {
           sendResponse(response);
         });

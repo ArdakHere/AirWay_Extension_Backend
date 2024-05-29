@@ -36,7 +36,6 @@ function fetchData() {
 
             if (parsedData.coords) {
               console.log('Coordinates found:', parsedData.coords);
-
               fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
                 method: 'POST',
                 headers: {
@@ -60,6 +59,8 @@ function fetchData() {
                     fetchReportImage(data);
                   })
                   .catch(error => {
+                    console.log(htmlContent)
+                    console.log(parsedData.coords)
                     console.error('Fetch error:', error);
                     document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
                   });
