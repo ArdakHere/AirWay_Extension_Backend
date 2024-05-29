@@ -6,8 +6,7 @@
   "permissions": [
     "activeTab",
     "scripting",
-    "storage",
-    "https://airway-chrome-extension.onrender.com/*"
+    "storage"
   ],
   "background": {
     "service_worker": "background.js"
@@ -35,6 +34,6 @@
     }
   ],
   "content_security_policy": {
-    "extension_pages": "script-src 'self' https://airway-chrome-extension.onrender.com; object-src 'self'"
+    "extension_pages": "script-src 'self'; object-src 'self'"
   }
 }
