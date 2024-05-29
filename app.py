@@ -9,11 +9,6 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-@app.route("/", methods=["POST"])
-def dummy_route():
-    return jsonify("yoooo")
-
-
 @app.route("/analyze/kolesa", methods=["POST"])
 def analyze_kolesa():
     try:
