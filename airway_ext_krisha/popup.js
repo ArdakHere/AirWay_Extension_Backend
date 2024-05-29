@@ -1,17 +1,19 @@
 document.addEventListener('DOMContentLoaded', async function () {
+  console.log('DOM fully loaded and parsed');
   const hasSavedResult = await displaySavedResult();
-  document.getElementById('viewReport').addEventListener('click', viewReport);
+    document.getElementById('viewReport').addEventListener('click', viewReport);
 
   if (!hasSavedResult) {
     fetchData();
+
   }
-  document.getElementById('findObjects').addEventListener('click', findInfrastructure);
 });
 
 function fetchData() {
   try {
-    chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       const activeTab = tabs[0];
+      console.log('Active tab:', activeTab);
 
       // Clear stored image data when a new listing is accessed
       chrome.storage.local.remove('reportImageData', function () {
@@ -20,64 +22,64 @@ function fetchData() {
 
       // Fetch the HTML content of the active tab
       chrome.scripting.executeScript(
-          {
-            target: {tabId: activeTab.id},
-            func: () => document.documentElement.outerHTML
-          },
-          (results) => {
-            if (chrome.runtime.lastError || !results || !results[0]) {
-              console.error('Error executing script:', chrome.runtime.lastError);
-              document.getElementById('result').innerHTML = '<p>Error retrieving HTML content</p>';
-              return;
-            }
-
-            const htmlContent = results[0].result;
-            const parsedData = parseDataFromHTML(htmlContent);
-
-            if (parsedData.coords) {
-              console.log('Coordinates found:', parsedData.coords);
-
-              fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({coords: parsedData.coords}),
-              })
-                  .then(response => {
-                    if (!response.ok) {
-                      throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                  })
-                  .then(data => {
-                    data.city = parsedData.city;  // Add city data to the response data
-                    console.log('Response data:', data);
-                    displayResult(data);
-                    saveResult(data);  // Save the result to chrome.storage.local
-                    // Show the infrastructure section
-                    document.querySelector('.infrastructure-section').classList.remove('hidden');
-                    fetchReportImage(data);
-                  })
-                  .catch(error => {
-                    console.error('Fetch error:', error);
-                    document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
-                  });
-            } else {
-              console.error('Coordinates not found');
-              document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
-            }
+        {
+          target: { tabId: activeTab.id },
+          func: () => document.documentElement.outerHTML
+        },
+        (results) => {
+          if (chrome.runtime.lastError || !results || !results[0]) {
+            console.error('Error executing script:', chrome.runtime.lastError);
+            document.getElementById('result').innerHTML = '<p>Error retrieving HTML content</p>';
+            return;
           }
+          const htmlContent = results[0].result;
+          if(parseDataFromHTML(htmlContent)){
+            fetch('https://airway-chrome-extension.onrender.com/analyze/kolesa', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ url: activeTab.url, html: htmlContent }), // Include HTML content in the body
+            })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(data => {
+              console.log('Response data:', data);
+              displayResult(data);
+              saveResult(activeTab.url, data);  // Save the result to chrome.storage.local
+              fetchReportImage(data);
+            })
+            .catch(error => {
+              console.error('Fetch error:', error);
+              document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
+            });
+          } else {
+            document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
+          }
+        }
       );
     });
   } catch (error) {
     console.error('Error in fetchData:', error);
   }
+}
 
+function parseDataFromHTML(html) {
+  // ... your existing code ...
+
+  // Check if the string "Коробка передач" is present in the HTML
+  const isPresent = html.includes("Коробка передач");
+
+  // Return the result
+  return isPresent;
 }
 
 function fetchReportImage(data_dict) {
-  fetch('https://airway-chrome-extension.onrender.com/get_krisha_report', {
+  fetch('https://airway-chrome-extension.onrender.com/get_kolesa_report', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -88,17 +90,22 @@ function fetchReportImage(data_dict) {
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-
     return response.json();
   })
   .then(data => {
     if (data.report_image) {
       // Store the report image data for later use
+      console.log("Storing report for future use");
       chrome.storage.local.set({ reportImageData: data.report_image }, () => {
-        document.getElementById('result').innerHTML += '<p>Отчет готов, нажмите на кнопку ниже</p>';
+        if (chrome.runtime.lastError) {
+          console.error('Error saving report image data:', chrome.runtime.lastError);
+        } else {
+          console.log('Stored report image data successfully');
+          document.getElementById('result').innerHTML += '<p>Отчет готов, нажмите на кнопку ниже</p>';
+        }
       });
-
     } else {
+      console.log('No image data received');
       document.getElementById('result').innerHTML += '<p>No image data received</p>';
     }
   })
@@ -108,59 +115,50 @@ function fetchReportImage(data_dict) {
   });
 }
 
-function parseDataFromHTML(html) {
-  const latMatch = html.match(/"lat":([\d.]+)/);
-  const lonMatch = html.match(/"lon":([\d.]+)/);
-  const cityMatch = html.match(/"city":"([^"]+)"/);
-
-  const coords = latMatch && lonMatch ? { lat: parseFloat(latMatch[1]), lon: parseFloat(lonMatch[1]) } : null;
-  const city = cityMatch ? cityMatch[1] : null;
-  console.log(city);
-
-  return { coords, city };
-}
-
 function displayResult(data) {
   // Extract required properties
-  const { aq_index_color, aq_index_numeric, num_of_ev_chargers, num_of_parks, city } = data;
+  const { gas_mileage, effect_index, rgbColor, ev_car_recs,  nonev_car_recs} = data;
+  console.log("Displaying result:", data);
 
-  // Convert color array to RGB format
-  const colorRgb = `rgb(${aq_index_color.join(', ')})`;
+  // Convert the rgbColor array to a CSS-compatible RGB string
+  const rgbString = `rgb(${rgbColor.join(',')})`;
 
-  // Conditionally include the air quality index if the city is Алматы
-  const airQualityHtml = city === 'Almaty' ? `
-    <div style="margin-top: 8px; margin-bottom: 8px">
-      <img src="./assets/images/air_q.png" alt="Air Pollution Icon" style="width: 32px; height: 32px; transform: translateY(5px)" />
-      <strong style="font-size: 22px">Загрязненность воздуха: <span style="color: ${colorRgb}; font-size: 22px">${aq_index_numeric}</span></strong> 
-    </div>` : '';
-
+  // Generate the result HTML
   const resultHtml = `
-    <ul style="width: 300px">
-      ${airQualityHtml}
+    <div style="margin-top: 8px; margin-bottom: 8px">
+      <img src="./assets/images/tank_icon.png" alt="Air Pollution Icon" style="width: 32px; height: 32px; transform: translateY(5px)" />
+      <strong style="font-size: 20px">Расход топлива на 100км: <span style="color: black; font-size: 20px">${gas_mileage} л.</span></strong>
       <div style="margin-top: 8px; margin-bottom: 8px">
-        <img src="./assets/images/parks.png" alt="Park Icon" style="width: 32px; height: 32px; transform: translateY(5px)" />
-        <strong style="font-size: 22px">Парки рядом: <span style="color: green; font-weight: bold;">${num_of_parks}</span></strong> 
+        <img src="./assets/images/emission_icon.png" alt="Park Icon" style="width: 32px; height: 32px; transform: translateY(5px)" />
+        <strong style="font-size: 20px">Влияние машины на загрязнение воздуха: <span style="color: ${rgbString}; font-weight: bold;">${effect_index}</span></strong>
       </div>
       <div style="margin-top: 8px; margin-bottom: 8px">
-        <img src="./assets/images/ev_charger.png" alt="EV Charger Icon" style="width: 32px; height: 32px; transform: translateY(5px)" />
-        <strong style="font-size: 22px">Зарядки для эл.мобилей рядом: <span style="color: green; font-weight: bold;">${num_of_ev_chargers}</span></strong> 
+        <img src="./assets/images/car_options.png" alt="Park Icon" style="width: 32px; height: 32px; transform: translateY(5px)" />
+        <strong style="font-size: 20px">Рассмотрите более экологичные автомобили по схожей \n цене: 
+            <span style="color: black";"> <br> <span style="color: rgba(0,47,153,0.76)"> Электромобили </span><br> ${ev_car_recs} 
+            <span style="color: black";"> <br> <span style="color: rgba(0,47,153,0.76)"> Обычные автомобили </span><br> ${nonev_car_recs}</span></strong>
+        </span></strong>
+        
       </div>
-    </ul>
-  `;
-  document.getElementById('viewReport').style.display = 'inline-block';
-
+    </div>`;
+    document.getElementById('viewReport').style.display = 'inline-block';
 
   document.getElementById('result').innerHTML = resultHtml;
-
-  
-
 }
 
 function saveResult(url, data) {
   const result = {};
   result[url] = data;
-  chrome.storage.local.set(result, function() {
-    console.log('Result saved for URL:', url);
+  console.log('Saving result for URL:', url, 'with data:', data);
+  chrome.storage.local.set(result, function () {
+    if (chrome.runtime.lastError) {
+      console.error('Error saving result:', chrome.runtime.lastError);
+    } else {
+      console.log('Result saved for URL:', url);
+      chrome.storage.local.get(url, function (storedResult) {
+        console.log('Retrieved stored result to confirm:', storedResult);
+      });
+    }
   });
 }
 
@@ -171,12 +169,21 @@ function displaySavedResult() {
       const url = activeTab.url;
 
       chrome.storage.local.get(url, function (result) {
+        if (chrome.runtime.lastError) {
+          console.error('Error retrieving saved result:', chrome.runtime.lastError);
+          resolve(false);
+          return;
+        }
+
         if (result[url]) {
+          console.log('Displaying saved result for URL:', url, 'with data:', result[url]);
           displayResult(result[url]);
+          document.getElementById('viewReport').style.display = 'inline-block';
+
           // Show the infrastructure section
-          document.querySelector('.infrastructure-section').classList.remove('hidden');
           resolve(true);
         } else {
+          console.log('No saved result found for URL:', url);
           // Clear stored image data if URL does not match
           chrome.storage.local.remove('reportImageData', function () {
             console.log('Cleared stored report image data due to URL mismatch');
@@ -190,77 +197,17 @@ function displaySavedResult() {
 
 function viewReport() {
   chrome.storage.local.get('reportImageData', (result) => {
+    if (chrome.runtime.lastError) {
+      console.error('Error retrieving report image data:', chrome.runtime.lastError);
+      return;
+    }
+
     if (result.reportImageData) {
       const reportImageUrl = `data:image/png;base64,${result.reportImageData}`;
+      console.log('Opening report image:', reportImageUrl);
       chrome.tabs.create({ url: reportImageUrl });
+    } else {
+      console.log('No report image data found');
     }
   });
-}
-
-function findInfrastructure() {
-  const objectType = document.getElementById('objectType').value;
-  const distance = document.getElementById('distance').value;
-
-  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    const activeTab = tabs[0];
-
-    chrome.scripting.executeScript(
-      {
-        target: { tabId: activeTab.id },
-        func: () => document.documentElement.outerHTML
-      },
-      (results) => {
-        if (chrome.runtime.lastError || !results || !results[0]) {
-          console.error('Error executing script:', chrome.runtime.lastError);
-          document.getElementById('infrastructureResult').innerHTML = '<p>Error retrieving HTML content</p>';
-          return;
-        }
-
-        const htmlContent = results[0].result;
-        const coords = parseDataFromHTML(htmlContent).coords;
-
-        if (coords) {
-          console.log('Coordinates found:', coords);
-
-          fetch('https://airway-chrome-extension.onrender.com/find_objects', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ coords: coords, objectType: objectType, distance: distance }),
-          })
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.json();
-          })
-          .then(data => {
-            console.log('Infrastructure response data:', data);
-            displayInfrastructureResult(data);
-          })
-          .catch(error => {
-            console.error('Fetch error:', error);
-            document.getElementById('infrastructureResult').innerHTML = '<p>Ошибка получения информации для отчета</p>';
-          });
-        } else {
-          console.error('Coordinates not found');
-          document.getElementById('infrastructureResult').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
-        }
-      }
-    );
-  });
-}
-
-function displayInfrastructureResult(data) {
-  if (!data.count) {
-    document.getElementById('infrastructureResult').innerHTML = '<p>Ни один объект не найден</p>';
-    return;
-  }
-
-  const infrastructureHtml = `
-    <p>Кол-во найдено - ${data.count}</p>
-  `;
-
-  document.getElementById('infrastructureResult').innerHTML = infrastructureHtml;
 }
