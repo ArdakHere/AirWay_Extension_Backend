@@ -34,7 +34,7 @@ function fetchData() {
           const parsedData = parseDataFromHTML(htmlContent);
           if(parseDataFromHTML(parsedData.coords)){
             console.log('Parsed data:', parsedData);
-            fetch('https://airway-chrome-extension.onrender.com/analyze/kolesa_krisha', {
+            fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

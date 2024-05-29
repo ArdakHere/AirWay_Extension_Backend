@@ -57,7 +57,7 @@ def analyze_kolesa():
         print(f"Error: {e}")
         return jsonify({"error": "Internal server error"}), 500
 
-@app.route("/analyze/kolesa_krisha", methods=["POST"])
+@app.route("/analyze/krisha", methods=["POST"])
 def analyze_krisha():
     try:
         print("yoooo")
