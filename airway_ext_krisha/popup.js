@@ -31,15 +31,15 @@ function fetchData() {
             return;
           }
           const htmlContent = results[0].result;
-          const coords = parseDataFromHTML(htmlContent).coords;
-
+          const parsedData = parseDataFromHTML(htmlContent);
           if(parseDataFromHTML(htmlContent)){
             fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
               },
-              body: JSON.stringify({ url: activeTab.url, coords:  coords}), // Include HTML content in the body
+
+              body: JSON.stringify({ url: activeTab.url, coords:  parsedData.coords}), // Include HTML content in the body
             })
             .then(response => {
               if (!response.ok) {

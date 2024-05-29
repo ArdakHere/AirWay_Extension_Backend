@@ -57,13 +57,6 @@ def analyze_kolesa():
         print(f"Error: {e}")
         return jsonify({"error": "Internal server error"}), 500
 
-@app.route('/report_image/<path:filename>')
-def serve_image(filename):
-    try:
-        return send_file(filename, mimetype='image/png')
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
 @app.route("/analyze/krisha", methods=["POST"])
 def analyze_krisha():
     try:
