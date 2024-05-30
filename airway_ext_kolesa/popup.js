@@ -33,30 +33,36 @@ function fetchData() {
             return;
           }
           const htmlContent = results[0].result;
-          if(parseDataFromHTML(htmlContent)){
-            fetch('https://airway-chrome-extension.onrender.com/analyze/kolesa', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({ url: activeTab.url, html: htmlContent }), // Include HTML content in the body
-            })
-            .then(response => {
-              if (!response.ok) {
-                throw new Error('Network response was not ok');
-              }
-              return response.json();
-            })
-            .then(data => {
-              console.log('Response data:', data);
-              displayResult(data);
-              saveResult(activeTab.url, data);  // Save the result to chrome.storage.local
-              fetchReportImage(data);
-            })
-            .catch(error => {
-              console.error('Fetch error:', error);
-              document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
-            });
+          const parsedData = checkIfListingIsOpened(htmlContent);
+
+          if(checkIfListingIsOpened(htmlContent)){
+            if(checkIfElectric(htmlContent)){
+              document.getElementById('result').innerHTML = '<p>Электрический автомобиль, не загрязняет воздух</p>';
+            } else {
+              fetch('https://airway-chrome-extension.onrender.com/analyze/kolesa', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({url: activeTab.url, html: htmlContent}), // Include HTML content in the body
+              })
+                  .then(response => {
+                    if (!response.ok) {
+                      throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                  })
+                  .then(data => {
+                    console.log('Response data:', data);
+                    displayResult(data);
+                    saveResult(activeTab.url, data);  // Save the result to chrome.storage.local
+                    fetchReportImage(data);
+                  })
+                  .catch(error => {
+                    console.error('Fetch error:', error);
+                    document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
+                  });
+            }
           } else {
             document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
           }
@@ -66,9 +72,10 @@ function fetchData() {
   } catch (error) {
     console.error('Error in fetchData:', error);
   }
+
 }
 
-function parseDataFromHTML(html) {
+function checkIfListingIsOpened(html) {
   // ... your existing code ...
 
   // Check if the string "Коробка передач" is present in the HTML
@@ -77,6 +84,17 @@ function parseDataFromHTML(html) {
   // Return the result
   return isPresent;
 }
+
+function checkIfElectric(html) {
+  // ... your existing code ...
+
+  // Check if the string "Коробка передач" is present in the HTML
+  const isPresent = html.includes("Объем двигателя, л");
+
+  // Return the result
+  return isPresent;
+}
+
 
 function fetchReportImage(data_dict) {
   fetch('https://airway-chrome-extension.onrender.com/get_kolesa_report', {
