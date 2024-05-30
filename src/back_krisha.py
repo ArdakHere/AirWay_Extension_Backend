@@ -552,9 +552,9 @@ def create_apartment_report_from_manual_input(apartment_location: str) -> str:
 
 def access_metrics(coords: dict) -> dict:
 
-    sensor_dataframe = read_sergek_data()
-    sensor_locations_df = pd.DataFrame(sensor_dataframe)
-    sensor_locations_df = sensor_locations_df.drop(sensor_locations_df.index[0])
+    # sensor_dataframe = read_sergek_data()
+    # sensor_locations_df = pd.DataFrame(sensor_dataframe)
+    # sensor_locations_df = sensor_locations_df.drop(sensor_locations_df.index[0])
 
     #closest_sensor = find_closest_sensor(sensor_locations_df, coords)
 
