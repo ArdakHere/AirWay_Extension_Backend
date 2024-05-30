@@ -59,10 +59,24 @@ def analyze_kolesa():
 
 @app.route("/analyze/krisha", methods=["POST"])
 def analyze_krisha():
-    try:
-        result = {}
-        print(f"{1} + {2}")
-        result.update({"aq_index_numeric_saved": 2, "num_of_parks": 2, "num_of_ev_chargers": 2})
+    try:  # error is here in the try block
+        define_openAI_client_with_key_krisha("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
+        data = request.json
+
+        coords = data.get('coords')
+
+        if not coords:
+            return jsonify({"error": "Coordinates missing"}), 400
+
+        new_coords = {}
+        new_coords['Latitude'] = coords.pop('lat')
+        new_coords['Longitude'] = coords.pop('lon')
+        result = access_metrics(new_coords)
+
+
+
+        print(f"{3} + {3}")
+        result.update({"aq_index_numeric_saved": 3, "num_of_parks": 2, "num_of_ev_chargers": 3})
         print(result)
         return jsonify(result)
 
