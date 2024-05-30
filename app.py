@@ -64,11 +64,10 @@ def analyze_krisha():
 
 
 
-        if not coords:
-            return jsonify({"error": "Coordinates missing"}), 400
-
-        new_coords = {'Latitude': coords.pop('lat'), 'Longitude': coords.pop('lon')}
-        result = access_metrics(new_coords)
+        # if not coords:
+        #     return jsonify({"error": "Coordinates missing"}), 400
+        new_coords = {'Latitude': "43.20767373887579", 'Longitude': "76.90454069805367"}
+        result = access_metrics("new_coords")
 
         result['latitude'] = new_coords['Latitude']
         result['longitude'] = new_coords['Longitude']
