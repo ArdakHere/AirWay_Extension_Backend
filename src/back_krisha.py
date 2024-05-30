@@ -27,7 +27,7 @@ def read_sergek_data() -> DataFrame:
     Returns:
         DataFrame: DataFrame with the data from SERGEK's dataset
     """
-    df = pd.read_csv("./AirWay_Extension/lean_sergek_aq_dataset.csv")
+    df = pd.read_csv("/Users/ardaka/Desktop/AirWay_Extension/lean_sergek_aq_dataset.csv")
 
     return df
 
@@ -158,7 +158,6 @@ def generate_gpt_apartment_report(air_quality_data: dict) -> str:
     report = response.choices[0].message.content
 
     return report
-
 
 def calculate_index(metrics_data: dict) -> dict:
     """
@@ -555,8 +554,7 @@ def access_metrics(coords: dict) -> dict:
 
     sensor_dataframe = read_sergek_data()
     sensor_locations_df = pd.DataFrame(sensor_dataframe)
-    sensor_locations_df = sensor_locations_df.drop(
-        sensor_locations_df.index[0])
+    sensor_locations_df = sensor_locations_df.drop(sensor_locations_df.index[0])
 
     closest_sensor = find_closest_sensor(
         sensor_locations_df, coords)
@@ -564,20 +562,20 @@ def access_metrics(coords: dict) -> dict:
     closest_sensor_dict = closest_sensor.to_dict()
 
 
-    data_processed: dict = calculate_index(closest_sensor_dict)
+    calculated_index_dict = calculate_index(closest_sensor_dict)
+    data_processed = {}
 
     data_processed.update({'pm25': int(float(closest_sensor_dict['pm25']))})
     data_processed.update({'pm10': int(float(closest_sensor_dict['pm10']))})
     data_processed.update({'co': int(float(closest_sensor_dict['co']))})
-    data_processed.update({"aq_index_numeric": int(data_processed["aq_index_numeric"])})
-    data_processed.update({"aq_index_color": data_processed["aq_index_color"]})
-    data_processed.update({"color_pm25": data_processed["color_pm25"]})
-    data_processed.update({"color_pm10": data_processed["color_pm10"]})
-    data_processed.update({"color_co": data_processed["color_co"]})
+    data_processed.update({"aq_index_numeric": int(calculated_index_dict["aq_index_numeric"])})
+    data_processed.update({"aq_index_color": calculated_index_dict["aq_index_color"]})
+    data_processed.update({"color_pm25": calculated_index_dict["color_pm25"]})
+    data_processed.update({"color_pm10": calculated_index_dict["color_pm10"]})
+    data_processed.update({"color_co": calculated_index_dict["color_co"]})
     
     return data_processed
-  
-    
+
 def create_apartment_report_from_link(url: str) -> str:
     """
         Create a realestate_report for an apartment based on the air quality data and the html code

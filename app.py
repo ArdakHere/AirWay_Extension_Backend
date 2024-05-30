@@ -71,8 +71,9 @@ def analyze_krisha():
 
         new_coords = {'Latitude': coordinates.pop('lat'), 'Longitude': coordinates.pop('lon')}
 
-        result = access_metrics(new_coords)
+        # result = access_metrics(new_coords)
 
+        result = get_phys_data(data.get('html'))
         # result['latitude'] = new_coords['Latitude']
         # result['longitude'] = new_coords['Longitude']
         #
@@ -108,7 +109,7 @@ def analyze_krisha():
         # result.update({"num_of_parks": parks,
         #                "num_of_ev_chargers": ev_chargers})
 
-        return jsonify(coordinates)
+        return jsonify(result)
 
     except Exception as e:
         print(f"Error: {e}")
