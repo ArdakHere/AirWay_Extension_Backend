@@ -71,8 +71,8 @@ def analyze_krisha():
 
         new_coords = {'Latitude': coordinates.pop('lat'), 'Longitude': coordinates.pop('lon')}
 
-        # result = access_metrics(new_coords)
-        #
+        result = access_metrics(new_coords)
+
         # result['latitude'] = new_coords['Latitude']
         # result['longitude'] = new_coords['Longitude']
         #
