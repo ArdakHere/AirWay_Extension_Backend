@@ -60,7 +60,6 @@ def analyze_kolesa():
 @app.route("/analyze/krisha", methods=["POST"])
 def analyze_krisha():
     try:  # error is here in the try block
-        define_openAI_client_with_key_krisha("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
         data = request.json
 
         coords = data.get('coords')

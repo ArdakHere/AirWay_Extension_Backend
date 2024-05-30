@@ -8,8 +8,7 @@ from openai import OpenAI
 
 from src.plotter import *
 
-client = None  # Define client outside the function
-
+client = OpenAI(api_key="sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
 def define_openAI_client_with_key_krisha(key: str) -> None:
     """
         Set the global value of OpenAI client with the passed api key
