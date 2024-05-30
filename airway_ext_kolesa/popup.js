@@ -36,7 +36,7 @@ function fetchData() {
           const parsedData = checkIfListingIsOpened(htmlContent);
 
           if(checkIfListingIsOpened(htmlContent)){
-            if(checkIfElectric(htmlContent)){
+            if(!checkIfElectric(htmlContent)){
               document.getElementById('result').innerHTML = '<p>Электрический автомобиль, не загрязняет воздух</p>';
             } else {
               fetch('https://airway-chrome-extension.onrender.com/analyze/kolesa', {
@@ -89,6 +89,7 @@ function checkIfElectric(html) {
   // ... your existing code ...
 
   // Check if the string "Коробка передач" is present in the HTML
+
   const isPresent = html.includes("Объем двигателя, л");
 
   // Return the result
