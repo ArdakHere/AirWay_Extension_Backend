@@ -82,23 +82,23 @@ def analyze_krisha():
         if aq_index_numeric_saved >= 90:
             result['aq_index_numeric'] = "Опасная"
 
-        parks = make_2gis_request_and_return_object_count(
-            "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
-            new_coords['Latitude'],
-            new_coords['Longitude'],
-            "adm_div",
-            800,
-            "парк"
-        )
-
-        ev_chargers = make_2gis_request_and_return_object_count(
-            "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
-            new_coords['Latitude'],
-            new_coords['Longitude'],
-            "",
-            500,
-            "зарядка для автомобиля"
-        )
+        # parks = make_2gis_request_and_return_object_count(
+        #     "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
+        #     new_coords['Latitude'],
+        #     new_coords['Longitude'],
+        #     "adm_div",
+        #     800,
+        #     "парк"
+        # )
+        #
+        # ev_chargers = make_2gis_request_and_return_object_count(
+        #     "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
+        #     new_coords['Latitude'],
+        #     new_coords['Longitude'],
+        #     "",
+        #     500,
+        #     "зарядка для автомобиля"
+        # )
 
 
         result.update({"aq_index_numeric": 31,
