@@ -54,6 +54,7 @@ function fetchData() {
               saveResult(activeTab.url, data);  // Save the result to chrome.storage.local
               // Show the infrastructure section
               document.querySelector('.infrastructure-section').classList.remove('hidden');
+              console.log(data)
               fetchReportImage(data);
             })
             .catch(error => {
