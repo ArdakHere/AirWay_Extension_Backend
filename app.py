@@ -107,7 +107,7 @@ def analyze_krisha():
 
         print(f"{ev_chargers} + {parks}")
 
-        result.update({"aq_index_color": result['aq_index_color'],
+        result.update({
                        "aq_index_numeric": aq_index_numeric_saved,
                        "num_of_parks": parks,
                        "num_of_ev_chargers": ev_chargers})
