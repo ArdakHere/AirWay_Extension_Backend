@@ -562,7 +562,7 @@ def access_metrics(coords: dict) -> dict:
     closest_sensor_dict = closest_sensor.to_dict()
 
 
-    calculated_index_dict = calculate_index(closest_sensor_dict)
+  #  calculated_index_dict = calculate_index(closest_sensor_dict)
     data_processed = {}
 
     # data_processed.update({'pm25': int(float(closest_sensor_dict['pm25']))})
