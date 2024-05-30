@@ -125,7 +125,7 @@ def get_krisha_report():
         image_base64 = test_generate_report_for_an_apartment(
             data['latitude'],
             data['longitude'],
-            data['aq_index_numeric_saved'],
+            data['aq_index_numeric'],
             data['aq_index_color'],
             data['color_pm25'],
             data['color_pm10'],
