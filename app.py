@@ -60,15 +60,58 @@ def analyze_kolesa():
 @app.route("/analyze/krisha", methods=["POST"])
 def analyze_krisha():
     try:  # error is here in the try block
-        #define_openAI_client_with_key_krisha("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
-        #data = request.json
-        #
-        # coords = data.get('url')
+        define_openAI_client_with_key_krisha("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
+        data = request.json
 
-        result = {}
+        coords = data.get('coords')
 
-        print(f"{3} + {3}")
-        result.update({"aq_index_numeric_saved": 3, "num_of_parks": 2, "num_of_ev_chargers": 3})
+        if not coords:
+            return jsonify({"error": "Coordinates missing"}), 400
+
+        new_coords = {}
+        new_coords['Latitude'] = coords.pop('lat')
+        new_coords['Longitude'] = coords.pop('lon')
+        result = access_metrics(new_coords)
+
+        result['latitude'] = new_coords['Latitude']
+        result['longitude'] = new_coords['Longitude']
+
+        aq_index_numeric_saved = result['aq_index_numeric']
+
+        if aq_index_numeric_saved <= 40:
+            result['aq_index_numeric'] = "Не несет риска, воздух чист"
+        if 50 >= aq_index_numeric_saved > 40:
+            result['aq_index_numeric'] = "Минимальное"
+        if 90 > aq_index_numeric_saved > 50:
+            result['aq_index_numeric'] = "Средняя"
+        if aq_index_numeric_saved >= 90:
+            result['aq_index_numeric'] = "Опасная"
+
+        parks = make_2gis_request_and_return_object_count(
+            "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
+            new_coords['Latitude'],
+            new_coords['Longitude'],
+            "adm_div",
+            800,
+            "парк"
+        )
+
+        ev_chargers = make_2gis_request_and_return_object_count(
+            "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
+            new_coords['Latitude'],
+            new_coords['Longitude'],
+            "",
+            500,
+            "зарядка для автомобиля"
+        )
+
+        print(f"{ev_chargers} + {parks}")
+
+        result.update({"aq_index_color": result['aq_index_color'],
+                       "aq_index_numeric": aq_index_numeric_saved,
+                       "num_of_parks": parks,
+                       "num_of_ev_chargers": ev_chargers})
+
         print(result)
         return jsonify(result)
 
