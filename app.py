@@ -105,7 +105,9 @@ def analyze_krisha():
             "зарядка для автомобиля"
         )
 
-        result.update({"num_of_parks": parks,
+        ## missing the numeric number of aq
+        result.update({"aq_index_numeric_int": aq_index_numeric_saved,
+            "num_of_parks": parks,
                        "num_of_ev_chargers": ev_chargers})
 
         return jsonify(result)
