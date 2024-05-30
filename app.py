@@ -68,19 +68,19 @@ def analyze_krisha():
         new_coords = {'Latitude': 43.20767373887579, 'Longitude': 76.90454069805367}
         result = access_metrics(new_coords)
 
-        result['latitude'] = new_coords['Latitude']
-        result['longitude'] = new_coords['Longitude']
-
-        aq_index_numeric_saved = result['aq_index_numeric']
-
-        if aq_index_numeric_saved <= 40:
-            result['aq_index_numeric'] = "Не несет риска, воздух чист"
-        if 50 >= aq_index_numeric_saved > 40:
-            result['aq_index_numeric'] = "Минимальное"
-        if 90 > aq_index_numeric_saved > 50:
-            result['aq_index_numeric'] = "Средняя"
-        if aq_index_numeric_saved >= 90:
-            result['aq_index_numeric'] = "Опасная"
+        # result['latitude'] = new_coords['Latitude']
+        # result['longitude'] = new_coords['Longitude']
+        #
+        # aq_index_numeric_saved = result['aq_index_numeric']
+        #
+        # if aq_index_numeric_saved <= 40:
+        #     result['aq_index_numeric'] = "Не несет риска, воздух чист"
+        # if 50 >= aq_index_numeric_saved > 40:
+        #     result['aq_index_numeric'] = "Минимальное"
+        # if 90 > aq_index_numeric_saved > 50:
+        #     result['aq_index_numeric'] = "Средняя"
+        # if aq_index_numeric_saved >= 90:
+        #     result['aq_index_numeric'] = "Опасная"
 
         # parks = make_2gis_request_and_return_object_count(
         #     "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
