@@ -60,7 +60,6 @@ def analyze_kolesa():
 @app.route("/analyze/krisha", methods=["POST"])
 def analyze_krisha():
     try:  # error is here in the try block
-        data = request.json
 
 
 
