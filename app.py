@@ -60,50 +60,55 @@ def analyze_kolesa():
 @app.route("/analyze/krisha", methods=["POST"])
 def analyze_krisha():
     try:  # error is here in the try block
+        define_openAI_client_with_key_krisha("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
 
+        data = request.json
 
+        coordinates = data.get('coords')
 
-        # if not coords:
-        #     return jsonify({"error": "Coordinates missing"}), 400
-        new_coords = {'Latitude': 43.20767373887579, 'Longitude': 76.90454069805367}
-        result = access_metrics(new_coords)
+        if not coordinates:
+            return jsonify({"error": "Coordinates missing"}), 400
 
-        result['latitude'] = new_coords['Latitude']
-        result['longitude'] = new_coords['Longitude']
-        return jsonify({"error": result}), 7771717
-        aq_index_numeric_saved = result['aq_index_numeric']
-
-        if aq_index_numeric_saved <= 40:
-            result['aq_index_numeric'] = "Не несет риска, воздух чист"
-        if 50 >= aq_index_numeric_saved > 40:
-            result['aq_index_numeric'] = "Минимальное"
-        if 90 > aq_index_numeric_saved > 50:
-            result['aq_index_numeric'] = "Средняя"
-        if aq_index_numeric_saved >= 90:
-            result['aq_index_numeric'] = "Опасная"
-
-        parks = make_2gis_request_and_return_object_count(
-            "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
-            new_coords['Latitude'],
-            new_coords['Longitude'],
-            "adm_div",
-            800,
-            "парк"
-        )
-
-        ev_chargers = make_2gis_request_and_return_object_count(
-            "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
-            new_coords['Latitude'],
-            new_coords['Longitude'],
-            "",
-            500,
-            "зарядка для автомобиля"
-        )
-
-        result.update({"num_of_parks": parks,
-                       "num_of_ev_chargers": ev_chargers})
-
-        return jsonify(result)
+        # new_coords = {'Latitude': 43.20767373887579, 'Longitude': 76.90454069805367}
+        # result = access_metrics(new_coords)
+        #
+        # result['latitude'] = new_coords['Latitude']
+        # result['longitude'] = new_coords['Longitude']
+        #
+        #
+        # aq_index_numeric_saved = result['aq_index_numeric']
+        #
+        # if aq_index_numeric_saved <= 40:
+        #     result['aq_index_numeric'] = "Не несет риска, воздух чист"
+        # if 50 >= aq_index_numeric_saved > 40:
+        #     result['aq_index_numeric'] = "Минимальное"
+        # if 90 > aq_index_numeric_saved > 50:
+        #     result['aq_index_numeric'] = "Средняя"
+        # if aq_index_numeric_saved >= 90:
+        #     result['aq_index_numeric'] = "Опасная"
+        #
+        # parks = make_2gis_request_and_return_object_count(
+        #     "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
+        #     new_coords['Latitude'],
+        #     new_coords['Longitude'],
+        #     "adm_div",
+        #     800,
+        #     "парк"
+        # )
+        #
+        # ev_chargers = make_2gis_request_and_return_object_count(
+        #     "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15",
+        #     new_coords['Latitude'],
+        #     new_coords['Longitude'],
+        #     "",
+        #     500,
+        #     "зарядка для автомобиля"
+        # )
+        #
+        # result.update({"num_of_parks": parks,
+        #                "num_of_ev_chargers": ev_chargers})
+        #
+        return jsonify(coordinates)
 
     except Exception as e:
         print(f"Error: {e}")
