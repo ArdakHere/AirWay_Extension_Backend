@@ -66,7 +66,7 @@ def analyze_krisha():
         # if not coords:
         #     return jsonify({"error": "Coordinates missing"}), 400
         new_coords = {'Latitude': 43.20767373887579, 'Longitude': 76.90454069805367}
-        result = access_metrics(new_coords)
+        # result = access_metrics(new_coords)
 
         # result['latitude'] = new_coords['Latitude']
         # result['longitude'] = new_coords['Longitude']
@@ -104,8 +104,8 @@ def analyze_krisha():
         # result.update({"aq_index_numeric": 31,
         #                "num_of_parks": 3,
         #                "num_of_ev_chargers": 2})
-
-        return jsonify(result)
+        dict = {}
+        return jsonify(dict)
 
     except Exception as e:
         print(f"Error: {e}")
