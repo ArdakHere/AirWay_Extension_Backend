@@ -39,7 +39,7 @@ function fetchData() {
               headers: {
                 'Content-Type': 'application/json',
               },
-              body: JSON.stringify({ url: activeTab.url, coords:  parsedData.coords}), // Include HTML content in the body
+              body: JSON.stringify({ url: activeTab.url, coords: parsedData.coords}), // Include HTML content in the body
             })
             .then(response => {
               if (!response.ok) {
@@ -121,13 +121,13 @@ function displayResult(data) {
   const { aq_index_color, aq_index_numeric, num_of_ev_chargers, num_of_parks, city } = data;
 
   // Convert color array to RGB format
-  const colorRgb = `rgb(${aq_index_color.join(', ')})`;
+ // const colorRgb = `rgb(${aq_index_color.join(', ')})`;
 
   // Conditionally include the air quality index if the city is Алматы
   const airQualityHtml = city === 'Almaty' ? `
     <div style="margin-top: 8px; margin-bottom: 8px">
       <img src="./assets/images/air_q.png" alt="Air Pollution Icon" style="width: 32px; height: 32px; transform: translateY(5px)" />
-      <strong style="font-size: 22px">Загрязненность воздуха: <span style="color: ${colorRgb}; font-size: 22px">${aq_index_numeric}</span></strong> 
+      <strong style="font-size: 22px">Загрязненность воздуха: <span style="color: green; font-size: 22px">${aq_index_numeric}</span></strong> 
     </div>` : '';
 
   const resultHtml = `
