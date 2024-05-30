@@ -68,7 +68,7 @@ def analyze_krisha():
         result = {}
 
         print(f"{3} + {3}")
-        result.update({aq_index_numeric_saved": 3, "num_of_parks": 2, "num_of_ev_chargers": 3})
+        result.update({"aq_index_numeric_saved": 3, "num_of_parks": 2, "num_of_ev_chargers": 3})
         print(result)
         return jsonify(result)
 
