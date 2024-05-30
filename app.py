@@ -70,7 +70,7 @@ def analyze_krisha():
 
         result['latitude'] = new_coords['Latitude']
         result['longitude'] = new_coords['Longitude']
-        return jsonify(result)
+        return jsonify({"error": result}), 6969
         aq_index_numeric_saved = result['aq_index_numeric']
 
         if aq_index_numeric_saved <= 40:
@@ -100,8 +100,8 @@ def analyze_krisha():
             "зарядка для автомобиля"
         )
 
-        result.update({"num_of_parks": 3,
-                       "num_of_ev_chargers": 2})
+        result.update({"num_of_parks": parks,
+                       "num_of_ev_chargers": ev_chargers})
 
         return jsonify(result)
 
