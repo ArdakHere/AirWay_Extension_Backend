@@ -32,7 +32,7 @@ function fetchData() {
           }
           const htmlContent = results[0].result;
           const parsedData = parseDataFromHTML(htmlContent);
-          // if(parseDataFromHTML(parsedData.coords)){
+          if(parseDataFromHTML(parsedData.coords)){
             console.log('Parsed data:', parsedData);
             fetch('https://airway-chrome-extension.onrender.com/analyze/krisha', {
               method: 'POST',
@@ -61,9 +61,9 @@ function fetchData() {
               console.error('Fetch error:', error);
               document.getElementById('result').innerHTML = '<p>Error retrieving data</p>';
             });
-          // } else {
-          //   document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
-          // }
+          } else {
+            document.getElementById('result').innerHTML = '<p>Перейдите на страницу объявления для получения отчета</p>';
+          }
         }
       );
     });
@@ -156,8 +156,16 @@ function displayResult(data) {
 function saveResult(url, data) {
   const result = {};
   result[url] = data;
-  chrome.storage.local.set(result, function() {
-    console.log('Result saved for URL:', url);
+  console.log('Saving result for URL:', url, 'with data:', data);
+  chrome.storage.local.set(result, function () {
+    if (chrome.runtime.lastError) {
+      console.error('Error saving result:', chrome.runtime.lastError);
+    } else {
+      console.log('Result saved for URL:', url);
+      chrome.storage.local.get(url, function (storedResult) {
+        console.log('Retrieved stored result to confirm:', storedResult);
+      });
+    }
   });
 }
 
@@ -187,9 +195,17 @@ function displaySavedResult() {
 
 function viewReport() {
   chrome.storage.local.get('reportImageData', (result) => {
+    if (chrome.runtime.lastError) {
+      console.error('Error retrieving report image data:', chrome.runtime.lastError);
+      return;
+    }
+
     if (result.reportImageData) {
       const reportImageUrl = `data:image/png;base64,${result.reportImageData}`;
+      console.log('Opening report image:', reportImageUrl);
       chrome.tabs.create({ url: reportImageUrl });
+    } else {
+      console.log('No report image data found');
     }
   });
 }
