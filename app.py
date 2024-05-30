@@ -100,14 +100,11 @@ def analyze_krisha():
             "зарядка для автомобиля"
         )
 
-        print(f"{ev_chargers} + {parks}")
 
-        result.update({
-                       "aq_index_numeric": 1,
-                       "num_of_parks": 2,
-                       "num_of_ev_chargers": 3})
+        result.update({"aq_index_numeric": "31",
+                       "num_of_parks": "32",
+                       "num_of_ev_chargers": "32"})
 
-        print(result)
         return jsonify(result)
 
     except Exception as e:
