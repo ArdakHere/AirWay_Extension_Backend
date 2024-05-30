@@ -272,7 +272,7 @@ def calculate_haversine(
 def find_closest_sensor(
     sensor_locations: DataFrame,
     apartment_location: dict
-) -> object:
+) -> dict:
     """
     Find the closest sensor to the apartment
 

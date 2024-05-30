@@ -73,7 +73,8 @@ def analyze_krisha():
 
         # result = access_metrics(new_coords)
 
-        result = {}
+        dict = {}
+        result = data.get('coords')
         # result['latitude'] = new_coords['Latitude']
         # result['longitude'] = new_coords['Longitude']
         #
