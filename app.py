@@ -63,10 +63,9 @@ def analyze_krisha():
         define_openAI_client_with_key_krisha("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
         data = request.json
 
-        coords = data.get('coords')
+        coords = data.get('url')
 
-
-
+        result = {}
 
         print(f"{3} + {3}")
         result.update({"aq_index_numeric_saved": 3, "num_of_parks": 2, "num_of_ev_chargers": 3})
