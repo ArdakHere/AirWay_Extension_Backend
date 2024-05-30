@@ -70,7 +70,7 @@ def analyze_krisha():
 
         result['latitude'] = new_coords['Latitude']
         result['longitude'] = new_coords['Longitude']
-
+        return jsonify(result)
         aq_index_numeric_saved = result['aq_index_numeric']
 
         if aq_index_numeric_saved <= 40:
