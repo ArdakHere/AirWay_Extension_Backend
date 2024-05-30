@@ -27,7 +27,7 @@ def read_sergek_data() -> DataFrame:
     Returns:
         DataFrame: DataFrame with the data from SERGEK's dataset
     """
-    df = pd.read_csv("/Users/ardaka/Desktop/AirWay_Extension/lean_sergek_aq_dataset.csv")
+    df = pd.read_csv("./lean_sergek_aq_dataset.csv")
 
     return df
 
