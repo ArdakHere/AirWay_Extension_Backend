@@ -103,9 +103,9 @@ def analyze_krisha():
         print(f"{ev_chargers} + {parks}")
 
         result.update({
-                       "aq_index_numeric": aq_index_numeric_saved,
-                       "num_of_parks": parks,
-                       "num_of_ev_chargers": ev_chargers})
+                       "aq_index_numeric": 1,
+                       "num_of_parks": 2,
+                       "num_of_ev_chargers": 3})
 
         print(result)
         return jsonify(result)
