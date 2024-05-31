@@ -12,7 +12,6 @@ CORS(app)  # Enable CORS for all routes
 @app.route("/analyze/kolesa", methods=["POST"])
 def analyze_kolesa():
     try:
-        define_openAI_client_with_key_kolesa("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
 
         data = request.json
 
@@ -60,7 +59,6 @@ def analyze_kolesa():
 @app.route("/analyze/krisha", methods=["POST"])
 def analyze_krisha():
     try:  # error is here in the try block
-        define_openAI_client_with_key_krisha("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
 
         data = request.json
 
@@ -119,7 +117,6 @@ def analyze_krisha():
 @app.route("/get_krisha_report", methods=["POST"])
 def get_krisha_report():
     try:
-        define_openAI_client_with_key_krisha("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
 
         data = request.json.get('data', {})
 
@@ -149,7 +146,6 @@ def get_krisha_report():
 @app.route("/get_kolesa_report", methods=["POST"])
 def get_kolesa_report():
     try:
-        define_openAI_client_with_key_kolesa("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
 
         data = request.json.get('data', {})
 
@@ -174,8 +170,7 @@ def get_kolesa_report():
 
 @app.route("/find_objects", methods=["POST"])
 def find_objects():
-    define_openAI_client_with_key_krisha("sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
-    define_two_gis_key("a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15")
+
 
     data = request.json
     coords = data.get('coords')
