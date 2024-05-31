@@ -15,17 +15,8 @@ APARTMENT_IMAGE_PATH = "./src/assets/img/template_for_reports/apartmentReportTem
 CAR_IMAGE_PATH = "./src/assets/img/template_for_reports/carReportTemplate.png"
 PICTOGRAMS_PATH = "./src/assets/img/icons_for_report/"
 
-two_gis_key = "a2a1c32b-aba8-4b6f-8af4-e3c0eddf9d15"
 
-def define_two_gis_key(key: str) -> None:
-    """
-    Set the global value of two gis key to the passed key
 
-    Args:
-        key (str): two gis key.
-    """
-    global two_gis_key
-    two_gis_key = key
 
 def get_pm25_hour_history(sensor_name: str) -> str | None:
     """Get the path to the hourly PM2.5 history graph with the given filename.
@@ -179,6 +170,8 @@ def generate_report_for_an_apartment(
 
   #  solution to circular import, if removed the error will reappear
     from back_krisha import make_2gis_request_and_return_object_count
+
+    two_gis_key = os.getenv('TWOGIS_API_KEY')
 
     park_num = make_2gis_request_and_return_object_count(
         two_gis_key,
@@ -363,6 +356,8 @@ def test_generate_report_for_an_apartment(
 
     # solution to circular import, if removed the error will reappear
     from src.back_krisha import make_2gis_request_and_return_object_count
+
+    two_gis_key = os.getenv('TWOGIS_API_KEY')
 
     park_num = make_2gis_request_and_return_object_count(
         two_gis_key,

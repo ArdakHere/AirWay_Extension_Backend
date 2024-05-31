@@ -1,21 +1,14 @@
 import csv
 import re
+import os
+
+import openai
 import requests
 from translate import Translator
 from openai import OpenAI
 
-
-client = None  # Define client outside the function
-
-def define_openAI_client_with_key_kolesa(key: str) -> None:
-    """
-        Set the global value of OpenAI client with the passed api key
-    Args:
-        key (str): two gis key.
-    """
-    global client  # Use the global keyword to modify the global variable inside the function
-    client = OpenAI(api_key=key)
-
+global client
+client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 def get_car_recommendations(price: int) -> str:
     """

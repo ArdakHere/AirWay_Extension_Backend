@@ -1,6 +1,7 @@
 import json
 import requests
 import re
+import os
 import pandas as pd
 from pandas import DataFrame
 from math import radians, sin, cos, sqrt, atan2
@@ -8,17 +9,8 @@ from openai import OpenAI
 
 from src.plotter import *
 
-client = OpenAI(api_key="sk-proj-o8sVKtk3kiLNjojWw3xzT3BlbkFJBBHS6RyrzXxLeSYR7YnO")
-def define_openAI_client_with_key_krisha(key: str) -> None:
-    """
-        Set the global value of OpenAI client with the passed api key
-
-    Args:
-        key (str): two gis key.
-    """
-
-    global client  # Use the global keyword to modify the global variable inside the function
-    client = OpenAI(api_key=key)
+global client
+client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 def read_sergek_data() -> DataFrame:
     """
